@@ -33,6 +33,7 @@ namespace CinemaBookingSystem
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Myprogress = new System.Windows.Forms.ProgressBar();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,10 +52,10 @@ namespace CinemaBookingSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(271, 18);
+            this.label1.Location = new System.Drawing.Point(283, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(295, 28);
             this.label1.TabIndex = 1;
@@ -67,12 +68,26 @@ namespace CinemaBookingSystem
             this.Myprogress.Size = new System.Drawing.Size(838, 23);
             this.Myprogress.TabIndex = 2;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label8.Location = new System.Drawing.Point(810, -2);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 28);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "X";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // Intro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(837, 429);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.Myprogress);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -93,6 +108,7 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar Myprogress;
+        private System.Windows.Forms.Label label8;
     }
 }
 

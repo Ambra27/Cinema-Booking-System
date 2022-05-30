@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace CinemaBookingSystem
 {
-    public partial class Intro : Form
+    public partial class CancellationTbl : Form
     {
-        public Intro()
+        public CancellationTbl()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

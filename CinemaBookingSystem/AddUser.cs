@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace CinemaBookingSystem
 {
-    public partial class Intro : Form
+    public partial class AddUser : Form
     {
-        public Intro()
+        public AddUser()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void AddUser_Load(object sender, EventArgs e)
         {
 
         }
