@@ -90,7 +90,7 @@ namespace CinemaBookingSystem
             this.UserId.BackColor = System.Drawing.SystemColors.HighlightText;
             this.UserId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserId.ForeColor = System.Drawing.Color.DarkOrange;
-            this.UserId.Location = new System.Drawing.Point(211, 223);
+            this.UserId.Location = new System.Drawing.Point(228, 223);
             this.UserId.Name = "UserId";
             this.UserId.Size = new System.Drawing.Size(218, 32);
             this.UserId.TabIndex = 21;
@@ -113,7 +113,7 @@ namespace CinemaBookingSystem
             this.UserName.BackColor = System.Drawing.SystemColors.HighlightText;
             this.UserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserName.ForeColor = System.Drawing.Color.DarkOrange;
-            this.UserName.Location = new System.Drawing.Point(211, 287);
+            this.UserName.Location = new System.Drawing.Point(228, 287);
             this.UserName.Name = "UserName";
             this.UserName.Size = new System.Drawing.Size(218, 32);
             this.UserName.TabIndex = 23;
@@ -136,7 +136,7 @@ namespace CinemaBookingSystem
             this.UserEmail.BackColor = System.Drawing.SystemColors.HighlightText;
             this.UserEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserEmail.ForeColor = System.Drawing.Color.DarkOrange;
-            this.UserEmail.Location = new System.Drawing.Point(211, 347);
+            this.UserEmail.Location = new System.Drawing.Point(228, 351);
             this.UserEmail.Name = "UserEmail";
             this.UserEmail.Size = new System.Drawing.Size(218, 32);
             this.UserEmail.TabIndex = 25;
@@ -159,7 +159,7 @@ namespace CinemaBookingSystem
             this.UserAddress.BackColor = System.Drawing.SystemColors.HighlightText;
             this.UserAddress.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserAddress.ForeColor = System.Drawing.Color.DarkOrange;
-            this.UserAddress.Location = new System.Drawing.Point(211, 414);
+            this.UserAddress.Location = new System.Drawing.Point(228, 418);
             this.UserAddress.Multiline = true;
             this.UserAddress.Name = "UserAddress";
             this.UserAddress.Size = new System.Drawing.Size(218, 88);
@@ -183,7 +183,7 @@ namespace CinemaBookingSystem
             this.UserPhone.BackColor = System.Drawing.SystemColors.HighlightText;
             this.UserPhone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserPhone.ForeColor = System.Drawing.Color.DarkOrange;
-            this.UserPhone.Location = new System.Drawing.Point(211, 529);
+            this.UserPhone.Location = new System.Drawing.Point(228, 525);
             this.UserPhone.Name = "UserPhone";
             this.UserPhone.Size = new System.Drawing.Size(218, 32);
             this.UserPhone.TabIndex = 29;
@@ -220,10 +220,10 @@ namespace CinemaBookingSystem
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(485, 99);
+            this.pictureBox1.Location = new System.Drawing.Point(479, 125);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(420, 594);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(414, 474);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 

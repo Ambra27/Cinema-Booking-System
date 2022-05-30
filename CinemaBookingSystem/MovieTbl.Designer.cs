@@ -81,7 +81,7 @@ namespace CinemaBookingSystem
             this.textBox1.ForeColor = System.Drawing.Color.DarkOrange;
             this.textBox1.Location = new System.Drawing.Point(245, 233);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 32);
+            this.textBox1.Size = new System.Drawing.Size(241, 32);
             this.textBox1.TabIndex = 8;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -140,7 +140,7 @@ namespace CinemaBookingSystem
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(245, 290);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(218, 31);
+            this.comboBox1.Size = new System.Drawing.Size(241, 31);
             this.comboBox1.TabIndex = 13;
             // 
             // textBox2
@@ -150,7 +150,7 @@ namespace CinemaBookingSystem
             this.textBox2.ForeColor = System.Drawing.Color.DarkOrange;
             this.textBox2.Location = new System.Drawing.Point(245, 503);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 32);
+            this.textBox2.Size = new System.Drawing.Size(241, 32);
             this.textBox2.TabIndex = 14;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -160,7 +160,7 @@ namespace CinemaBookingSystem
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(245, 358);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(218, 31);
+            this.comboBox2.Size = new System.Drawing.Size(241, 31);
             this.comboBox2.TabIndex = 15;
             // 
             // button2
@@ -197,7 +197,7 @@ namespace CinemaBookingSystem
             this.pictureBox1.Location = new System.Drawing.Point(492, 122);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(401, 494);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
@@ -218,7 +218,7 @@ namespace CinemaBookingSystem
             this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(244, 434);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(218, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(242, 32);
             this.dateTimePicker1.TabIndex = 20;
             // 
             // label8

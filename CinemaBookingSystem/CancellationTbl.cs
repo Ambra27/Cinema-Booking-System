@@ -16,5 +16,10 @@ namespace CinemaBookingSystem
         {
             InitializeComponent();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
