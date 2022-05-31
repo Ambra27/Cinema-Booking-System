@@ -133,6 +133,7 @@ namespace CinemaBookingSystem
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Ticket Booked Successfully");
+                    
                     Connection.Close();
                     Populate();
                 }
