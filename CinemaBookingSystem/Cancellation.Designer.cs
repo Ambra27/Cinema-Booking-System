@@ -31,24 +31,27 @@ namespace CinemaBookingSystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cancellation));
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.UserNameTb = new System.Windows.Forms.TextBox();
+            this.TicketIdCb = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CancelIdTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.CancelDGV = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.MovieNameTb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CancelDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -57,51 +60,34 @@ namespace CinemaBookingSystem
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label10.Location = new System.Drawing.Point(361, 384);
+            this.label10.Location = new System.Drawing.Point(361, 396);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(221, 28);
             this.label10.TabIndex = 63;
             this.label10.Text = "Cancellations List ";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // dataGridView1
+            // UserNameTb
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 448);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(890, 289);
-            this.dataGridView1.TabIndex = 62;
+            this.UserNameTb.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.UserNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNameTb.ForeColor = System.Drawing.Color.DarkOrange;
+            this.UserNameTb.Location = new System.Drawing.Point(664, 256);
+            this.UserNameTb.Name = "UserNameTb";
+            this.UserNameTb.Size = new System.Drawing.Size(218, 32);
+            this.UserNameTb.TabIndex = 59;
+            this.UserNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comboBox1
+            // TicketIdCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(217, 303);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(218, 31);
-            this.comboBox1.TabIndex = 60;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textBox2.Location = new System.Drawing.Point(664, 299);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 32);
-            this.textBox2.TabIndex = 59;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(664, 207);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(218, 31);
-            this.comboBox2.TabIndex = 58;
+            this.TicketIdCb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicketIdCb.ForeColor = System.Drawing.Color.DarkOrange;
+            this.TicketIdCb.FormattingEnabled = true;
+            this.TicketIdCb.Location = new System.Drawing.Point(664, 207);
+            this.TicketIdCb.Name = "TicketIdCb";
+            this.TicketIdCb.Size = new System.Drawing.Size(218, 31);
+            this.TicketIdCb.TabIndex = 58;
+            this.TicketIdCb.SelectionChangeCommitted += new System.EventHandler(this.TicketIdCb_SelectionChangeCommitted);
             // 
             // label6
             // 
@@ -109,7 +95,7 @@ namespace CinemaBookingSystem
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label6.Location = new System.Drawing.Point(482, 306);
+            this.label6.Location = new System.Drawing.Point(482, 263);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(140, 28);
             this.label6.TabIndex = 55;
@@ -121,7 +107,7 @@ namespace CinemaBookingSystem
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(29, 303);
+            this.label5.Location = new System.Drawing.Point(29, 260);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(162, 28);
             this.label5.TabIndex = 54;
@@ -151,16 +137,16 @@ namespace CinemaBookingSystem
             this.label3.TabIndex = 51;
             this.label3.Text = "Cancel Id";
             // 
-            // textBox1
+            // CancelIdTb
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textBox1.Location = new System.Drawing.Point(217, 203);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 32);
-            this.textBox1.TabIndex = 50;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CancelIdTb.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelIdTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelIdTb.ForeColor = System.Drawing.Color.DarkOrange;
+            this.CancelIdTb.Location = new System.Drawing.Point(217, 203);
+            this.CancelIdTb.Name = "CancelIdTb";
+            this.CancelIdTb.Size = new System.Drawing.Size(218, 32);
+            this.CancelIdTb.TabIndex = 50;
+            this.CancelIdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -227,24 +213,98 @@ namespace CinemaBookingSystem
             this.panel1.Size = new System.Drawing.Size(911, 28);
             this.panel1.TabIndex = 66;
             // 
+            // CancelDGV
+            // 
+            this.CancelDGV.BackgroundColor = System.Drawing.Color.White;
+            this.CancelDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CancelDGV.Location = new System.Drawing.Point(20, 442);
+            this.CancelDGV.Name = "CancelDGV";
+            this.CancelDGV.RowHeadersWidth = 70;
+            this.CancelDGV.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.CancelDGV.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelDGV.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.CancelDGV.RowTemplate.Height = 25;
+            this.CancelDGV.Size = new System.Drawing.Size(862, 295);
+            this.CancelDGV.TabIndex = 67;
+            this.CancelDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TicketDGV_CellContentClick);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Maroon;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(653, 335);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(134, 42);
+            this.button4.TabIndex = 70;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Maroon;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(377, 335);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(134, 42);
+            this.button2.TabIndex = 69;
+            this.button2.Text = "Reset";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Maroon;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(132, 335);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 42);
+            this.button1.TabIndex = 68;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // MovieNameTb
+            // 
+            this.MovieNameTb.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.MovieNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MovieNameTb.ForeColor = System.Drawing.Color.DarkOrange;
+            this.MovieNameTb.Location = new System.Drawing.Point(217, 263);
+            this.MovieNameTb.Name = "MovieNameTb";
+            this.MovieNameTb.Size = new System.Drawing.Size(218, 32);
+            this.MovieNameTb.TabIndex = 71;
+            this.MovieNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Cancellation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(905, 749);
+            this.Controls.Add(this.MovieNameTb);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CancelDGV);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.UserNameTb);
+            this.Controls.Add(this.TicketIdCb);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CancelIdTb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -253,9 +313,10 @@ namespace CinemaBookingSystem
             this.Name = "Cancellation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancellationTbl";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Cancellation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CancelDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,20 +325,23 @@ namespace CinemaBookingSystem
         #endregion
 
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox UserNameTb;
+        private System.Windows.Forms.ComboBox TicketIdCb;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CancelIdTb;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView CancelDGV;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox MovieNameTb;
     }
 }

@@ -44,11 +44,25 @@ namespace CinemaBookingSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if ( UIdTb.Text == "" || PasswordTb.Text == ""  )
+            {
+                MessageBox.Show("Enter The User Id and Password");
+            }else if(UIdTb.Text == "admin" && PasswordTb.Text == "admin" )
+            {
+                Home home = new Home();
+                home.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong User Name or Password!");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            UIdTb.Text = "";
+            PasswordTb.Text = "";
 
         }
     }

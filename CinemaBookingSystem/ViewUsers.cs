@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.Data.SqlClient;//utilizam baza de date sql
+using System.Data.SqlClient;
 
 namespace CinemaBookingSystem
 {
@@ -25,7 +25,7 @@ namespace CinemaBookingSystem
         private void Populate()
         {
             //prin aceasta metoda se popoleaza data grid view-ul cu datele 
-            //din tabela de interes ,modificate sau nu
+            //din tabela de interes , modificate sau nu
 
             Connection.Open();
             string query = "select * from UserTbl";
@@ -51,8 +51,9 @@ namespace CinemaBookingSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AddUser adduser = new AddUser();
-            adduser.Show();
+           
+            Home home = new Home();
+            home.Show();
             this.Hide();
 
         }
@@ -131,7 +132,8 @@ namespace CinemaBookingSystem
                     Populate();
                 }catch(Exception Ex)
                 {
-                    MessageBox.Show("Missing Information");
+                    MessageBox.Show(Ex.Message);
+                    //MessageBox.Show("Missing Information");
                 }
             }
         }

@@ -16,7 +16,8 @@ namespace CinemaBookingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewUsers());
+            Application.Run(new Intro());
+
         }
     }
 }

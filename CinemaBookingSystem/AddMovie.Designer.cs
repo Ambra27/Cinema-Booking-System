@@ -1,7 +1,7 @@
 ﻿
 namespace CinemaBookingSystem
 {
-    partial class Movie
+    partial class AddMovie
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@ namespace CinemaBookingSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Movie));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddMovie));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.MovieNameTb = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labell = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,6 +47,10 @@ namespace CinemaBookingSystem
             this.DateOfShowingPck = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.MovieIdTb = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,17 +90,17 @@ namespace CinemaBookingSystem
             this.MovieNameTb.TabIndex = 8;
             this.MovieNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label3
+            // labell
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(40, 233);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 28);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Movie Name";
+            this.labell.AutoSize = true;
+            this.labell.BackColor = System.Drawing.Color.Transparent;
+            this.labell.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labell.ForeColor = System.Drawing.Color.DarkOrange;
+            this.labell.Location = new System.Drawing.Point(40, 233);
+            this.labell.Name = "labell";
+            this.labell.Size = new System.Drawing.Size(162, 28);
+            this.labell.TabIndex = 9;
+            this.labell.Text = "Movie Name";
             // 
             // label4
             // 
@@ -147,7 +151,10 @@ namespace CinemaBookingSystem
             "Historical",
             "Horror",
             "Kids",
-            "Documentary"});
+            "Documentary",
+            "Action",
+            "Fantasy",
+            "SciFi"});
             this.GenreCb.Location = new System.Drawing.Point(245, 290);
             this.GenreCb.Name = "GenreCb";
             this.GenreCb.Size = new System.Drawing.Size(241, 31);
@@ -187,12 +194,13 @@ namespace CinemaBookingSystem
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(399, 603);
+            this.button2.Location = new System.Drawing.Point(422, 603);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 42);
+            this.button2.Size = new System.Drawing.Size(148, 42);
             this.button2.TabIndex = 17;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -203,7 +211,7 @@ namespace CinemaBookingSystem
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(245, 603);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 42);
+            this.button1.Size = new System.Drawing.Size(148, 42);
             this.button1.TabIndex = 16;
             this.button1.Text = "Record";
             this.button1.UseVisualStyleBackColor = false;
@@ -260,12 +268,69 @@ namespace CinemaBookingSystem
             this.panel1.Size = new System.Drawing.Size(925, 28);
             this.panel1.TabIndex = 36;
             // 
-            // Movie
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label3.Location = new System.Drawing.Point(40, 175);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 28);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Movie Id";
+            // 
+            // MovieIdTb
+            // 
+            this.MovieIdTb.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.MovieIdTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MovieIdTb.ForeColor = System.Drawing.Color.DarkOrange;
+            this.MovieIdTb.Location = new System.Drawing.Point(244, 175);
+            this.MovieIdTb.Name = "MovieIdTb";
+            this.MovieIdTb.Size = new System.Drawing.Size(241, 32);
+            this.MovieIdTb.TabIndex = 38;
+            this.MovieIdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Maroon;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(244, 670);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 42);
+            this.button3.TabIndex = 39;
+            this.button3.Text = "View Movies";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Maroon;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(422, 670);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(148, 42);
+            this.button4.TabIndex = 40;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // AddMovie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(905, 749);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.MovieIdTb);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.DateOfShowingPck);
             this.Controls.Add(this.label7);
@@ -277,16 +342,17 @@ namespace CinemaBookingSystem
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labell);
             this.Controls.Add(this.MovieNameTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Movie";
+            this.Name = "AddMovie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MovieTbl";
+            this.Load += new System.EventHandler(this.AddMovie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -298,7 +364,7 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox MovieNameTb;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labell;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -312,5 +378,9 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.DateTimePicker DateOfShowingPck;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox MovieIdTb;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

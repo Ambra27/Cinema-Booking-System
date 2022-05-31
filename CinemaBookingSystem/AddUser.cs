@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.Data.SqlClient;//utilizam baza de date sql
+using System.Data.SqlClient;
 
 namespace CinemaBookingSystem
 {
@@ -34,6 +34,8 @@ namespace CinemaBookingSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //in aceasta metoda ni se permite prin apasare butonului record
+            //sa adaugam un nou user in baza de date si informatii legate despre acesta
             if( UserIdTb.Text == "" || UserNameTb.Text == "" || UserEmailTb.Text == "" || UserAddressTb.Text == "" || UserPhoneTb.Text == ""  )
             {
                 MessageBox.Show("Missing information!Please complete the fields.");
@@ -54,17 +56,34 @@ namespace CinemaBookingSystem
                 }
             }
 
-            Connection.Open();
-
-            Connection.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //in aceasta metoda ni se permite prin apasarea butonului View Users
+            //sa avem acses la formul ViewUsers unde putem vedea informatii ale useri-lor din baza de date
             ViewUsers viewuser = new ViewUsers();
             viewuser.Show();
             this.Hide();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //in aceasta metoda atunci cand se va apasa butonul de reset
+            //valorile campurilor vor deveni goale
+            UserIdTb.Text = "";
+            UserNameTb.Text = "";
+            UserEmailTb.Text = "";
+            UserAddressTb.Text = "";
+            UserPhoneTb.Text = "";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
         }
     }
 }
