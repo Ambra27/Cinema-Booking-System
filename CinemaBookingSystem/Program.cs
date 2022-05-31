@@ -16,7 +16,7 @@ namespace CinemaBookingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CancellationTbl());
+            Application.Run(new ViewUsers());
         }
     }
 }

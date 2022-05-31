@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CinemaBookingSystem
 {
-    public partial class CancellationTbl : Form
+    public partial class Cancellation : Form
     {
-        public CancellationTbl()
+        public Cancellation()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace CinemaBookingSystem
         private void label8_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

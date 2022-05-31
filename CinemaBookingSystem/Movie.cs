@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;//
+
 namespace CinemaBookingSystem
 {
-    public partial class MovieTbl : Form
+    public partial class Movie : Form
     {
-        public MovieTbl()
+        public Movie()
         {
             InitializeComponent();
         }
@@ -30,6 +32,11 @@ namespace CinemaBookingSystem
         private void label8_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
