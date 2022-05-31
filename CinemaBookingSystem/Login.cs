@@ -65,5 +65,14 @@ namespace CinemaBookingSystem
             PasswordTb.Text = "";
 
         }
+
+        private void ButtonHelp_Click(object sender, EventArgs e)
+        {
+            //afisarea extensiei help la apasarea butonului cu acelasi nume
+            //MessageBox.Show("Help");
+            Help.ShowHelp(this, "C:/Users/User/Desktop/2022/An3/SemII/IP/Proiect/Rezervare online pentru bilete la cinema/Beta version/CinemaBookingSystem/Help-Rezervare online pentru biletele la cinema.chm");
+
+        }
     }
+
 }

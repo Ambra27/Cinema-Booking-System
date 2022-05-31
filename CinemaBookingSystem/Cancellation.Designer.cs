@@ -49,8 +49,10 @@ namespace CinemaBookingSystem
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.MovieNameTb = new System.Windows.Forms.TextBox();
+            this.ButtonHelp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CancelDGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +64,7 @@ namespace CinemaBookingSystem
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
             this.label10.Location = new System.Drawing.Point(361, 396);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(221, 28);
+            this.label10.Size = new System.Drawing.Size(213, 27);
             this.label10.TabIndex = 63;
             this.label10.Text = "Cancellations List ";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -97,7 +99,7 @@ namespace CinemaBookingSystem
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(482, 263);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 28);
+            this.label6.Size = new System.Drawing.Size(134, 27);
             this.label6.TabIndex = 55;
             this.label6.Text = "User Name";
             // 
@@ -109,7 +111,7 @@ namespace CinemaBookingSystem
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
             this.label5.Location = new System.Drawing.Point(29, 260);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 28);
+            this.label5.Size = new System.Drawing.Size(157, 27);
             this.label5.TabIndex = 54;
             this.label5.Text = "Movie Name";
             // 
@@ -121,7 +123,7 @@ namespace CinemaBookingSystem
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
             this.label4.Location = new System.Drawing.Point(482, 207);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 28);
+            this.label4.Size = new System.Drawing.Size(105, 27);
             this.label4.TabIndex = 52;
             this.label4.Text = "Ticket Id";
             // 
@@ -133,7 +135,7 @@ namespace CinemaBookingSystem
             this.label3.ForeColor = System.Drawing.Color.DarkOrange;
             this.label3.Location = new System.Drawing.Point(29, 203);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 28);
+            this.label3.Size = new System.Drawing.Size(122, 27);
             this.label3.TabIndex = 51;
             this.label3.Text = "Cancel Id";
             // 
@@ -156,7 +158,7 @@ namespace CinemaBookingSystem
             this.label8.ForeColor = System.Drawing.Color.DarkOrange;
             this.label8.Location = new System.Drawing.Point(880, 2);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 28);
+            this.label8.Size = new System.Drawing.Size(28, 27);
             this.label8.TabIndex = 49;
             this.label8.Text = "X";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -169,7 +171,7 @@ namespace CinemaBookingSystem
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
             this.label2.Location = new System.Drawing.Point(372, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 28);
+            this.label2.Size = new System.Drawing.Size(194, 27);
             this.label2.TabIndex = 48;
             this.label2.Text = "Cancel booking";
             // 
@@ -208,9 +210,10 @@ namespace CinemaBookingSystem
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
-            this.panel1.Location = new System.Drawing.Point(-3, 2);
+            this.panel1.Controls.Add(this.ButtonHelp);
+            this.panel1.Location = new System.Drawing.Point(-3, -6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(911, 28);
+            this.panel1.Size = new System.Drawing.Size(911, 36);
             this.panel1.TabIndex = 66;
             // 
             // CancelDGV
@@ -284,6 +287,19 @@ namespace CinemaBookingSystem
             this.MovieNameTb.TabIndex = 71;
             this.MovieNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // ButtonHelp
+            // 
+            this.ButtonHelp.AutoSize = true;
+            this.ButtonHelp.BackColor = System.Drawing.Color.Maroon;
+            this.ButtonHelp.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonHelp.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ButtonHelp.Location = new System.Drawing.Point(3, 8);
+            this.ButtonHelp.Name = "ButtonHelp";
+            this.ButtonHelp.Size = new System.Drawing.Size(64, 27);
+            this.ButtonHelp.TabIndex = 72;
+            this.ButtonHelp.Text = "Help";
+            this.ButtonHelp.Click += new System.EventHandler(this.ButtonHelp_Click);
+            // 
             // Cancellation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -316,6 +332,8 @@ namespace CinemaBookingSystem
             this.Load += new System.EventHandler(this.Cancellation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CancelDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -343,5 +361,6 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox MovieNameTb;
+        private System.Windows.Forms.Label ButtonHelp;
     }
 }
