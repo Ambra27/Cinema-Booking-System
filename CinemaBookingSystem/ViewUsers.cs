@@ -39,7 +39,7 @@ namespace CinemaBookingSystem
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -49,7 +49,7 @@ namespace CinemaBookingSystem
             Populate();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
            
             Home home = new Home();
@@ -58,7 +58,7 @@ namespace CinemaBookingSystem
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonDelete_Click(object sender, EventArgs e)
         {
 
             //in aceasta metoda ni se permite prin apasarea butonului delete sa stergem informatiile unui 
@@ -100,7 +100,7 @@ namespace CinemaBookingSystem
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonReset_Click(object sender, EventArgs e)
         {
             //in aceasta metoda atunci cand se va apasa butonul de reset
             //valorile campurilor vor deveni goale
@@ -111,7 +111,7 @@ namespace CinemaBookingSystem
             PhoneTb.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonUpdate_Click(object sender, EventArgs e)
         {
             //in aceasta metoda ni se permite cand apasam butonul de update sa modificam datele
             //unui user existent
@@ -138,7 +138,7 @@ namespace CinemaBookingSystem
             }
         }
 
-        private void ButtonHelp_Click(object sender, EventArgs e)
+        private void buttonHelp_Click(object sender, EventArgs e)
         {
             //afisarea extensiei help la apasarea butonului cu acelasi nume
             //MessageBox.Show("Help");

@@ -38,18 +38,18 @@ namespace CinemaBookingSystem
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.CancelIdTb = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.buttonExit = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonHelp = new System.Windows.Forms.Label();
             this.CancelDGV = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonReset = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.MovieNameTb = new System.Windows.Forms.TextBox();
-            this.ButtonHelp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -67,7 +67,7 @@ namespace CinemaBookingSystem
             this.label10.Size = new System.Drawing.Size(213, 27);
             this.label10.TabIndex = 63;
             this.label10.Text = "Cancellations List ";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            
             // 
             // UserNameTb
             // 
@@ -150,18 +150,18 @@ namespace CinemaBookingSystem
             this.CancelIdTb.TabIndex = 50;
             this.CancelIdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label8
+            // buttonExit
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Maroon;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label8.Location = new System.Drawing.Point(880, 2);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 27);
-            this.label8.TabIndex = 49;
-            this.label8.Text = "X";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.buttonExit.AutoSize = true;
+            this.buttonExit.BackColor = System.Drawing.Color.Maroon;
+            this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.Color.DarkOrange;
+            this.buttonExit.Location = new System.Drawing.Point(880, 2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(28, 27);
+            this.buttonExit.TabIndex = 49;
+            this.buttonExit.Text = "X";
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // label2
             // 
@@ -210,11 +210,24 @@ namespace CinemaBookingSystem
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
-            this.panel1.Controls.Add(this.ButtonHelp);
+            this.panel1.Controls.Add(this.buttonHelp);
             this.panel1.Location = new System.Drawing.Point(-3, -6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(911, 36);
             this.panel1.TabIndex = 66;
+            // 
+            // buttonHelp
+            // 
+            this.buttonHelp.AutoSize = true;
+            this.buttonHelp.BackColor = System.Drawing.Color.Maroon;
+            this.buttonHelp.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHelp.ForeColor = System.Drawing.Color.DarkOrange;
+            this.buttonHelp.Location = new System.Drawing.Point(3, 8);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(64, 27);
+            this.buttonHelp.TabIndex = 72;
+            this.buttonHelp.Text = "Help";
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // CancelDGV
             // 
@@ -229,52 +242,52 @@ namespace CinemaBookingSystem
             this.CancelDGV.RowTemplate.Height = 25;
             this.CancelDGV.Size = new System.Drawing.Size(862, 295);
             this.CancelDGV.TabIndex = 67;
-            this.CancelDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TicketDGV_CellContentClick);
+            
             // 
-            // button4
+            // buttonBack
             // 
-            this.button4.BackColor = System.Drawing.Color.Maroon;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(653, 335);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(134, 42);
-            this.button4.TabIndex = 70;
-            this.button4.Text = "Back";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonBack.BackColor = System.Drawing.Color.Maroon;
+            this.buttonBack.FlatAppearance.BorderSize = 0;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBack.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonBack.Location = new System.Drawing.Point(653, 335);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(134, 42);
+            this.buttonBack.TabIndex = 70;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // button2
+            // buttonReset
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(377, 335);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 42);
-            this.button2.TabIndex = 69;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonReset.BackColor = System.Drawing.Color.Maroon;
+            this.buttonReset.FlatAppearance.BorderSize = 0;
+            this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReset.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonReset.Location = new System.Drawing.Point(377, 335);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(134, 42);
+            this.buttonReset.TabIndex = 69;
+            this.buttonReset.Text = "Reset";
+            this.buttonReset.UseVisualStyleBackColor = false;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
-            // button1
+            // buttonCancel
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(132, 335);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 42);
-            this.button1.TabIndex = 68;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCancel.BackColor = System.Drawing.Color.Maroon;
+            this.buttonCancel.FlatAppearance.BorderSize = 0;
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonCancel.Location = new System.Drawing.Point(132, 335);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(134, 42);
+            this.buttonCancel.TabIndex = 68;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // MovieNameTb
             // 
@@ -287,19 +300,6 @@ namespace CinemaBookingSystem
             this.MovieNameTb.TabIndex = 71;
             this.MovieNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ButtonHelp
-            // 
-            this.ButtonHelp.AutoSize = true;
-            this.ButtonHelp.BackColor = System.Drawing.Color.Maroon;
-            this.ButtonHelp.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonHelp.ForeColor = System.Drawing.Color.DarkOrange;
-            this.ButtonHelp.Location = new System.Drawing.Point(3, 8);
-            this.ButtonHelp.Name = "ButtonHelp";
-            this.ButtonHelp.Size = new System.Drawing.Size(64, 27);
-            this.ButtonHelp.TabIndex = 72;
-            this.ButtonHelp.Text = "Help";
-            this.ButtonHelp.Click += new System.EventHandler(this.ButtonHelp_Click);
-            // 
             // Cancellation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -307,9 +307,9 @@ namespace CinemaBookingSystem
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(905, 749);
             this.Controls.Add(this.MovieNameTb);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonBack);
+            this.Controls.Add(this.buttonReset);
+            this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.CancelDGV);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -321,7 +321,7 @@ namespace CinemaBookingSystem
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.CancelIdTb);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -350,17 +350,17 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox CancelIdTb;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label buttonExit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView CancelDGV;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Button buttonReset;
+        private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.TextBox MovieNameTb;
-        private System.Windows.Forms.Label ButtonHelp;
+        private System.Windows.Forms.Label buttonHelp;
     }
 }

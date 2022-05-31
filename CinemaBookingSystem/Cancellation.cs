@@ -74,14 +74,9 @@ namespace CinemaBookingSystem
             Connection.Close();
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void TicketIdCb_SelectionChangeCommitted(object sender, EventArgs e)
@@ -89,12 +84,8 @@ namespace CinemaBookingSystem
             fecthMovieName();
         }
 
-        private void TicketDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonReset_Click(object sender, EventArgs e)
         {
             //in aceasta metoda atunci cand se va apasa butonul de reset
             //valorile campurilor vor deveni goale
@@ -126,7 +117,7 @@ namespace CinemaBookingSystem
             }
 
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCancel_Click(object sender, EventArgs e)
         {
             //in aceasta metoda atunci cand se va apasa butonul de cancel
             //se va adauga o anularea in tabela canceltbl a unei rezervari de bilete
@@ -161,14 +152,14 @@ namespace CinemaBookingSystem
             Populate();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
             Home home = new Home();
             home.Show();
             this.Hide();
         }
 
-        private void ButtonHelp_Click(object sender, EventArgs e)
+        private void buttonHelp_Click(object sender, EventArgs e)
         {
             //afisarea extensiei help la apasarea butonului cu acelasi nume
             //MessageBox.Show("Help");

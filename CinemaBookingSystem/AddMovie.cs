@@ -22,22 +22,12 @@ namespace CinemaBookingSystem
         // realizam o noua conexiune la baza de date sql creata CinemaDb
         SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\CinemaDb.mdf;Integrated Security=True;Connect Timeout=30");
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonRecord_Click(object sender, EventArgs e)
         {
             //in aceasta metoda ni se permite prin apasarea butonului record
             //sa inregistram un nou film si informatii de spre acesta in baza de date
@@ -64,7 +54,7 @@ namespace CinemaBookingSystem
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonReset_Click(object sender, EventArgs e)
         {
             //in aceasta metoda atunci cand se va apasa butonul de reset
             //valorile campurilor vor deveni goale
@@ -75,29 +65,25 @@ namespace CinemaBookingSystem
             SeatsTb.Text = "";
         }
 
-        private void AddMovie_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonViewMovies_Click(object sender, EventArgs e)
         {
             //in aceasta metoda ni se permite prin apasarea butonului View Movies
-            //sa avem acses la formul ViewMovies si sa vedem informatiile despre filmele din baza de date
+            //sa avem acces la formul ViewMovies si sa vedem informatiile despre filmele din baza de date
             ViewMovies viewmovie = new ViewMovies();
             viewmovie.Show();
             this.Hide();
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
             Home home = new Home();
             home.Show();
             this.Hide();
         }
 
-        private void ButtonHelp_Click(object sender, EventArgs e)
+        private void buttonHelp_Click(object sender, EventArgs e)
         {
             //afisarea extensiei help la apasarea butonului cu acelasi nume
             //MessageBox.Show("Help");

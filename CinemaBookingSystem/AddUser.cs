@@ -22,17 +22,12 @@ namespace CinemaBookingSystem
         // realizam o noua conexiune la baza de date sql creata CinemaDb
         SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\CinemaDb.mdf;Integrated Security=True;Connect Timeout=30"); 
 
-        private void AddUser_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonRecord_Click(object sender, EventArgs e)
         {
             //in aceasta metoda ni se permite prin apasare butonului record
             //sa adaugam un nou user in baza de date si informatii legate despre acesta
@@ -58,7 +53,7 @@ namespace CinemaBookingSystem
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonViewUsers_Click(object sender, EventArgs e)
         {
             //in aceasta metoda ni se permite prin apasarea butonului View Users
             //sa avem acses la formul ViewUsers unde putem vedea informatii ale useri-lor din baza de date
@@ -68,7 +63,7 @@ namespace CinemaBookingSystem
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonReset_Click(object sender, EventArgs e)
         {
             //in aceasta metoda atunci cand se va apasa butonul de reset
             //valorile campurilor vor deveni goale
@@ -79,14 +74,14 @@ namespace CinemaBookingSystem
             UserPhoneTb.Text = "";
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
             Home home = new Home();
             home.Show();
             this.Hide();
         }
 
-        private void ButtonHelp_Click(object sender, EventArgs e)
+        private void buttonHelp_Click(object sender, EventArgs e)
         {
             //afisarea extensiei help la apasarea butonului cu acelasi nume
             //MessageBox.Show("Help");

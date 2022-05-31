@@ -36,14 +36,14 @@ namespace CinemaBookingSystem
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.buttonReset = new System.Windows.Forms.Button();
             this.UIdTb = new System.Windows.Forms.TextBox();
             this.PasswordTb = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.buttonExit = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ButtonHelp = new System.Windows.Forms.Label();
+            this.buttonHelp = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -71,7 +71,6 @@ namespace CinemaBookingSystem
             this.label5.Size = new System.Drawing.Size(140, 23);
             this.label5.TabIndex = 4;
             this.label5.Text = "It\'s showtime!";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -84,7 +83,6 @@ namespace CinemaBookingSystem
             this.label4.Size = new System.Drawing.Size(284, 27);
             this.label4.TabIndex = 3;
             this.label4.Text = "Cinema Booking System";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -122,35 +120,35 @@ namespace CinemaBookingSystem
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
             // 
-            // button1
+            // buttonLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(506, 502);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 42);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonLogin.BackColor = System.Drawing.Color.Maroon;
+            this.buttonLogin.FlatAppearance.BorderSize = 0;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonLogin.Location = new System.Drawing.Point(506, 502);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(134, 42);
+            this.buttonLogin.TabIndex = 5;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // button2
+            // buttonReset
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(681, 502);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 42);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonReset.BackColor = System.Drawing.Color.Maroon;
+            this.buttonReset.FlatAppearance.BorderSize = 0;
+            this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReset.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonReset.Location = new System.Drawing.Point(681, 502);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(134, 42);
+            this.buttonReset.TabIndex = 6;
+            this.buttonReset.Text = "Reset";
+            this.buttonReset.UseVisualStyleBackColor = false;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
             // UIdTb
             // 
@@ -173,20 +171,19 @@ namespace CinemaBookingSystem
             this.PasswordTb.Size = new System.Drawing.Size(251, 32);
             this.PasswordTb.TabIndex = 8;
             this.PasswordTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.PasswordTb.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // label6
+            // buttonExit
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Maroon;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label6.Location = new System.Drawing.Point(878, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 27);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "X";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.buttonExit.AutoSize = true;
+            this.buttonExit.BackColor = System.Drawing.Color.Maroon;
+            this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.Color.DarkOrange;
+            this.buttonExit.Location = new System.Drawing.Point(878, 0);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(28, 27);
+            this.buttonExit.TabIndex = 9;
+            this.buttonExit.Text = "X";
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // pictureBox1
             // 
@@ -201,24 +198,24 @@ namespace CinemaBookingSystem
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Maroon;
-            this.panel2.Controls.Add(this.ButtonHelp);
+            this.panel2.Controls.Add(this.buttonHelp);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(906, 28);
             this.panel2.TabIndex = 11;
             // 
-            // ButtonHelp
+            // buttonHelp
             // 
-            this.ButtonHelp.AutoSize = true;
-            this.ButtonHelp.BackColor = System.Drawing.Color.Maroon;
-            this.ButtonHelp.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonHelp.ForeColor = System.Drawing.Color.DarkOrange;
-            this.ButtonHelp.Location = new System.Drawing.Point(3, 0);
-            this.ButtonHelp.Name = "ButtonHelp";
-            this.ButtonHelp.Size = new System.Drawing.Size(80, 34);
-            this.ButtonHelp.TabIndex = 12;
-            this.ButtonHelp.Text = "Help";
-            this.ButtonHelp.Click += new System.EventHandler(this.ButtonHelp_Click);
+            this.buttonHelp.AutoSize = true;
+            this.buttonHelp.BackColor = System.Drawing.Color.Maroon;
+            this.buttonHelp.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHelp.ForeColor = System.Drawing.Color.DarkOrange;
+            this.buttonHelp.Location = new System.Drawing.Point(3, 0);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(64, 27);
+            this.buttonHelp.TabIndex = 12;
+            this.buttonHelp.Text = "Help";
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // Login
             // 
@@ -227,11 +224,11 @@ namespace CinemaBookingSystem
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(905, 749);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.UIdTb);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonReset);
+            this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -241,7 +238,6 @@ namespace CinemaBookingSystem
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -259,14 +255,14 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox UIdTb;
         private System.Windows.Forms.TextBox PasswordTb;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label buttonExit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label ButtonHelp;
+        private System.Windows.Forms.Label buttonHelp;
     }
 }
