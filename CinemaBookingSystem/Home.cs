@@ -59,5 +59,19 @@ namespace CinemaBookingSystem
             cancel.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ViewMovies vm = new ViewMovies();
+            vm.Show();
+            this.Hide();
+        }
+
+        private void buttonViewUsers_Click(object sender, EventArgs e)
+        {
+            ViewUsers vu = new ViewUsers();
+            vu.Show();
+            this.Hide();
+        }
     }
 }

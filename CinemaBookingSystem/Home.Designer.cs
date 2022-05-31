@@ -33,12 +33,14 @@ namespace CinemaBookingSystem
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonMovies = new System.Windows.Forms.Button();
-            this.buttonUsers = new System.Windows.Forms.Button();
+            this.buttonAddMovies = new System.Windows.Forms.Button();
+            this.buttonAddUsers = new System.Windows.Forms.Button();
             this.buttonTickets = new System.Windows.Forms.Button();
             this.buttonCancellation = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonViewMovies = new System.Windows.Forms.Button();
+            this.buttonViewUsers = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,33 +78,33 @@ namespace CinemaBookingSystem
             this.panel1.Size = new System.Drawing.Size(925, 36);
             this.panel1.TabIndex = 41;
             // 
-            // buttonMovies
+            // buttonAddMovies
             // 
-            this.buttonMovies.BackColor = System.Drawing.Color.Maroon;
-            this.buttonMovies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonMovies.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMovies.ForeColor = System.Drawing.Color.White;
-            this.buttonMovies.Location = new System.Drawing.Point(44, 188);
-            this.buttonMovies.Name = "buttonMovies";
-            this.buttonMovies.Size = new System.Drawing.Size(186, 45);
-            this.buttonMovies.TabIndex = 42;
-            this.buttonMovies.Text = "Movies";
-            this.buttonMovies.UseVisualStyleBackColor = false;
-            this.buttonMovies.Click += new System.EventHandler(this.buttonMovies_Click);
+            this.buttonAddMovies.BackColor = System.Drawing.Color.Maroon;
+            this.buttonAddMovies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonAddMovies.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddMovies.ForeColor = System.Drawing.Color.White;
+            this.buttonAddMovies.Location = new System.Drawing.Point(61, 281);
+            this.buttonAddMovies.Name = "buttonAddMovies";
+            this.buttonAddMovies.Size = new System.Drawing.Size(186, 45);
+            this.buttonAddMovies.TabIndex = 42;
+            this.buttonAddMovies.Text = "Add Movies";
+            this.buttonAddMovies.UseVisualStyleBackColor = false;
+            this.buttonAddMovies.Click += new System.EventHandler(this.buttonMovies_Click);
             // 
-            // buttonUsers
+            // buttonAddUsers
             // 
-            this.buttonUsers.BackColor = System.Drawing.Color.Maroon;
-            this.buttonUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonUsers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUsers.ForeColor = System.Drawing.Color.White;
-            this.buttonUsers.Location = new System.Drawing.Point(44, 382);
-            this.buttonUsers.Name = "buttonUsers";
-            this.buttonUsers.Size = new System.Drawing.Size(186, 45);
-            this.buttonUsers.TabIndex = 43;
-            this.buttonUsers.Text = "Users";
-            this.buttonUsers.UseVisualStyleBackColor = false;
-            this.buttonUsers.Click += new System.EventHandler(this.buttonUsers_Click);
+            this.buttonAddUsers.BackColor = System.Drawing.Color.Maroon;
+            this.buttonAddUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonAddUsers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddUsers.ForeColor = System.Drawing.Color.White;
+            this.buttonAddUsers.Location = new System.Drawing.Point(681, 281);
+            this.buttonAddUsers.Name = "buttonAddUsers";
+            this.buttonAddUsers.Size = new System.Drawing.Size(186, 45);
+            this.buttonAddUsers.TabIndex = 43;
+            this.buttonAddUsers.Text = "Add Users";
+            this.buttonAddUsers.UseVisualStyleBackColor = false;
+            this.buttonAddUsers.Click += new System.EventHandler(this.buttonUsers_Click);
             // 
             // buttonTickets
             // 
@@ -110,7 +112,7 @@ namespace CinemaBookingSystem
             this.buttonTickets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTickets.ForeColor = System.Drawing.Color.White;
-            this.buttonTickets.Location = new System.Drawing.Point(681, 188);
+            this.buttonTickets.Location = new System.Drawing.Point(61, 382);
             this.buttonTickets.Name = "buttonTickets";
             this.buttonTickets.Size = new System.Drawing.Size(186, 45);
             this.buttonTickets.TabIndex = 44;
@@ -154,25 +156,55 @@ namespace CinemaBookingSystem
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
+            // buttonViewMovies
+            // 
+            this.buttonViewMovies.BackColor = System.Drawing.Color.Maroon;
+            this.buttonViewMovies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonViewMovies.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonViewMovies.ForeColor = System.Drawing.Color.White;
+            this.buttonViewMovies.Location = new System.Drawing.Point(61, 188);
+            this.buttonViewMovies.Name = "buttonViewMovies";
+            this.buttonViewMovies.Size = new System.Drawing.Size(186, 45);
+            this.buttonViewMovies.TabIndex = 48;
+            this.buttonViewMovies.Text = "View Movies";
+            this.buttonViewMovies.UseVisualStyleBackColor = false;
+            this.buttonViewMovies.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonViewUsers
+            // 
+            this.buttonViewUsers.BackColor = System.Drawing.Color.Maroon;
+            this.buttonViewUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonViewUsers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonViewUsers.ForeColor = System.Drawing.Color.White;
+            this.buttonViewUsers.Location = new System.Drawing.Point(681, 188);
+            this.buttonViewUsers.Name = "buttonViewUsers";
+            this.buttonViewUsers.Size = new System.Drawing.Size(186, 45);
+            this.buttonViewUsers.TabIndex = 49;
+            this.buttonViewUsers.Text = "View Users";
+            this.buttonViewUsers.UseVisualStyleBackColor = false;
+            this.buttonViewUsers.Click += new System.EventHandler(this.buttonViewUsers_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(907, 496);
+            this.Controls.Add(this.buttonViewUsers);
+            this.Controls.Add(this.buttonViewMovies);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCancellation);
             this.Controls.Add(this.buttonTickets);
-            this.Controls.Add(this.buttonUsers);
-            this.Controls.Add(this.buttonMovies);
+            this.Controls.Add(this.buttonAddUsers);
+            this.Controls.Add(this.buttonAddMovies);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
@@ -187,11 +219,13 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button buttonMovies;
-        private System.Windows.Forms.Button buttonUsers;
+        private System.Windows.Forms.Button buttonAddMovies;
+        private System.Windows.Forms.Button buttonAddUsers;
         private System.Windows.Forms.Button buttonTickets;
         private System.Windows.Forms.Button buttonCancellation;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonViewMovies;
+        private System.Windows.Forms.Button buttonViewUsers;
     }
 }
