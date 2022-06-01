@@ -34,15 +34,15 @@ namespace CinemaBookingSystem
             this.label1 = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.PhoneTb = new System.Windows.Forms.TextBox();
+            this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.AddressTb = new System.Windows.Forms.TextBox();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.EmailTb = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.NameTb = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.IdTb = new System.Windows.Forms.TextBox();
+            this.textBoxId = new System.Windows.Forms.TextBox();
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
@@ -105,16 +105,16 @@ namespace CinemaBookingSystem
             this.label7.TabIndex = 40;
             this.label7.Text = "Phone";
             // 
-            // PhoneTb
+            // textBoxPhone
             // 
-            this.PhoneTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.PhoneTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.PhoneTb.Location = new System.Drawing.Point(111, 296);
-            this.PhoneTb.Name = "PhoneTb";
-            this.PhoneTb.Size = new System.Drawing.Size(218, 32);
-            this.PhoneTb.TabIndex = 39;
-            this.PhoneTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPhone.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxPhone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPhone.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxPhone.Location = new System.Drawing.Point(111, 296);
+            this.textBoxPhone.Name = "textBoxPhone";
+            this.textBoxPhone.Size = new System.Drawing.Size(218, 32);
+            this.textBoxPhone.TabIndex = 39;
+            this.textBoxPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -128,17 +128,17 @@ namespace CinemaBookingSystem
             this.label3.TabIndex = 38;
             this.label3.Text = "Address";
             // 
-            // AddressTb
+            // textBoxAddress
             // 
-            this.AddressTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.AddressTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.AddressTb.Location = new System.Drawing.Point(671, 232);
-            this.AddressTb.Multiline = true;
-            this.AddressTb.Name = "AddressTb";
-            this.AddressTb.Size = new System.Drawing.Size(218, 88);
-            this.AddressTb.TabIndex = 37;
-            this.AddressTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxAddress.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxAddress.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAddress.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxAddress.Location = new System.Drawing.Point(671, 232);
+            this.textBoxAddress.Multiline = true;
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(218, 88);
+            this.textBoxAddress.TabIndex = 37;
+            this.textBoxAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -152,16 +152,16 @@ namespace CinemaBookingSystem
             this.label5.TabIndex = 36;
             this.label5.Text = "Email";
             // 
-            // EmailTb
+            // textBoxEmail
             // 
-            this.EmailTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.EmailTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.EmailTb.Location = new System.Drawing.Point(111, 232);
-            this.EmailTb.Name = "EmailTb";
-            this.EmailTb.Size = new System.Drawing.Size(218, 32);
-            this.EmailTb.TabIndex = 35;
-            this.EmailTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxEmail.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmail.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxEmail.Location = new System.Drawing.Point(111, 232);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(218, 32);
+            this.textBoxEmail.TabIndex = 35;
+            this.textBoxEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -175,16 +175,16 @@ namespace CinemaBookingSystem
             this.label4.TabIndex = 34;
             this.label4.Text = "Name";
             // 
-            // NameTb
+            // textBoxName
             // 
-            this.NameTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.NameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.NameTb.Location = new System.Drawing.Point(671, 165);
-            this.NameTb.Name = "NameTb";
-            this.NameTb.Size = new System.Drawing.Size(218, 32);
-            this.NameTb.TabIndex = 33;
-            this.NameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxName.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxName.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxName.Location = new System.Drawing.Point(671, 165);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(218, 32);
+            this.textBoxName.TabIndex = 33;
+            this.textBoxName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -198,16 +198,16 @@ namespace CinemaBookingSystem
             this.label8.TabIndex = 32;
             this.label8.Text = "Id";
             // 
-            // IdTb
+            // textBoxId
             // 
-            this.IdTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.IdTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.IdTb.Location = new System.Drawing.Point(111, 169);
-            this.IdTb.Name = "IdTb";
-            this.IdTb.Size = new System.Drawing.Size(218, 32);
-            this.IdTb.TabIndex = 31;
-            this.IdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxId.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxId.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxId.Location = new System.Drawing.Point(111, 169);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(218, 32);
+            this.textBoxId.TabIndex = 31;
+            this.textBoxId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonBack
             // 
@@ -328,15 +328,15 @@ namespace CinemaBookingSystem
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.PhoneTb);
+            this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.AddressTb);
+            this.Controls.Add(this.textBoxAddress);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.EmailTb);
+            this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.NameTb);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.IdTb);
+            this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -362,15 +362,15 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label buttonExit;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox PhoneTb;
+        private System.Windows.Forms.TextBox textBoxPhone;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox AddressTb;
+        private System.Windows.Forms.TextBox textBoxAddress;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox EmailTb;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox NameTb;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox IdTb;
+        private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonReset;

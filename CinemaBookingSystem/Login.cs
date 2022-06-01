@@ -60,13 +60,13 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in prim pas verificam daca avem campuri de informatii goale
             /// <summary>
-            if ( UIdTb.Text == "" || PasswordTb.Text == ""  )
+            if ( textBoxUid.Text == "" || textBoxPassword.Text == ""  )
             {
                 /// <summary>
                 ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
                 /// <summary>
                 MessageBox.Show("Enter The User Id and Password");
-            }else if(UIdTb.Text == "admin" && PasswordTb.Text == "admin" )
+            }else if(textBoxUid.Text == "admin" && textBoxPassword.Text == "admin" )
             {
                 /// <summary>
                 ///in cazul in care datele introduse in campuri sunt ambele admin se va permite accesul la Home Menu(formul HomeAdmin.cs) 
@@ -89,8 +89,8 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
             /// <summary>
-            UIdTb.Text = "";
-            PasswordTb.Text = "";
+            textBoxUid.Text = "";
+            textBoxPassword.Text = "";
 
         }
 

@@ -1,0 +1,68 @@
+[OPTIONS]
+Compiled file=chmhelp.chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=CinemaBookingSystem
+
+[WINDOWS]
+main="CinemaBookingSystem","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+annotated.html
+class_cinema_booking_system_1_1_add_movie-members.html
+class_cinema_booking_system_1_1_add_movie.html
+class_cinema_booking_system_1_1_add_user-members.html
+class_cinema_booking_system_1_1_add_user.html
+class_cinema_booking_system_1_1_cancellation-members.html
+class_cinema_booking_system_1_1_cancellation.html
+class_cinema_booking_system_1_1_home_admin-members.html
+class_cinema_booking_system_1_1_home_admin.html
+class_cinema_booking_system_1_1_intro-members.html
+class_cinema_booking_system_1_1_intro.html
+class_cinema_booking_system_1_1_login-members.html
+class_cinema_booking_system_1_1_login.html
+class_cinema_booking_system_1_1_ticket-members.html
+class_cinema_booking_system_1_1_ticket.html
+class_cinema_booking_system_1_1_view_movies-members.html
+class_cinema_booking_system_1_1_view_movies.html
+class_cinema_booking_system_1_1_view_users-members.html
+class_cinema_booking_system_1_1_view_users.html
+classes.html
+dir_2812c254496cee2958b006ae7590fc5c.html
+dir_3b551880fe31826a00acab0d84b41e76.html
+dir_3ca7c7d73e492277dcc043f22ff77c59.html
+dir_7cea4e1d99cc8afc13a065ab95b6fd75.html
+dir_bb5934ba600b47ec7b087c0edc5f47b9.html
+functions.html
+functions_func.html
+hierarchy.html
+index.html
+namespace_cinema_booking_system.html
+namespace_cinema_booking_system_1_1_properties.html
+namespaces.html
+bc_s.png
+bdwn.png
+class_cinema_booking_system_1_1_add_movie.png
+class_cinema_booking_system_1_1_add_user.png
+class_cinema_booking_system_1_1_cancellation.png
+class_cinema_booking_system_1_1_home_admin.png
+class_cinema_booking_system_1_1_intro.png
+class_cinema_booking_system_1_1_login.png
+class_cinema_booking_system_1_1_ticket.png
+class_cinema_booking_system_1_1_view_movies.png
+class_cinema_booking_system_1_1_view_users.png
+closed.png
+nav_f.png
+nav_h.png
+open.png
+sync_off.png
+sync_on.png
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png

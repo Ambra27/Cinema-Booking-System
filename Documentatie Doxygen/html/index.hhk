@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_cinema_booking_system.html"><param name="Name" value="CinemaBookingSystem"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html"><param name="Name" value="CinemaBookingSystem::AddMovie"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html"><param name="Name" value="CinemaBookingSystem::AddMovie"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html#add60f98832df3858954210a815ad47ea"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html"><param name="Name" value="CinemaBookingSystem::AddUser"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html"><param name="Name" value="CinemaBookingSystem::AddUser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html#a04fcd9d55c69b9507076aa666db72b62"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html"><param name="Name" value="CinemaBookingSystem::Cancellation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html"><param name="Name" value="CinemaBookingSystem::Cancellation"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html#ada93d5a72cec0203c45dec519005135f"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html"><param name="Name" value="CinemaBookingSystem::HomeAdmin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html"><param name="Name" value="CinemaBookingSystem::HomeAdmin"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html#ac9c5adc459c20ce632f0bf64a60d47d9"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_intro.html"><param name="Name" value="CinemaBookingSystem::Intro"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_intro.html"><param name="Name" value="CinemaBookingSystem::Intro"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_intro.html#aaec55c69b95a32b04018dc6af3882ee3"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_login.html"><param name="Name" value="CinemaBookingSystem::Login"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_login.html"><param name="Name" value="CinemaBookingSystem::Login"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_login.html#ab7cb4e99b03d318aae3e7b0c96df37fd"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_cinema_booking_system_1_1_properties.html"><param name="Name" value="CinemaBookingSystem::Properties"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html"><param name="Name" value="CinemaBookingSystem::Ticket"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html"><param name="Name" value="CinemaBookingSystem::Ticket"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html#a03645121f0d31e09ec1c0317ea6c177a"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html"><param name="Name" value="CinemaBookingSystem::ViewMovies"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html"><param name="Name" value="CinemaBookingSystem::ViewMovies"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html#a136e6a40be1135ab5f42804b14f43615"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html"><param name="Name" value="CinemaBookingSystem::ViewUsers"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html"><param name="Name" value="CinemaBookingSystem::ViewUsers"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html#a08d2e74b62a585f4cf02fdd5116581e5"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html#add60f98832df3858954210a815ad47ea"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html#add60f98832df3858954210a815ad47ea"><param name="Name" value="CinemaBookingSystem::AddMovie"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html#a04fcd9d55c69b9507076aa666db72b62"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html#a04fcd9d55c69b9507076aa666db72b62"><param name="Name" value="CinemaBookingSystem::AddUser"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html#ada93d5a72cec0203c45dec519005135f"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html#ada93d5a72cec0203c45dec519005135f"><param name="Name" value="CinemaBookingSystem::Cancellation"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html#ac9c5adc459c20ce632f0bf64a60d47d9"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html#ac9c5adc459c20ce632f0bf64a60d47d9"><param name="Name" value="CinemaBookingSystem::HomeAdmin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_intro.html#aaec55c69b95a32b04018dc6af3882ee3"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_intro.html#aaec55c69b95a32b04018dc6af3882ee3"><param name="Name" value="CinemaBookingSystem::Intro"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_login.html#ab7cb4e99b03d318aae3e7b0c96df37fd"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_login.html#ab7cb4e99b03d318aae3e7b0c96df37fd"><param name="Name" value="CinemaBookingSystem::Login"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html#a03645121f0d31e09ec1c0317ea6c177a"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html#a03645121f0d31e09ec1c0317ea6c177a"><param name="Name" value="CinemaBookingSystem::Ticket"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html#a136e6a40be1135ab5f42804b14f43615"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html#a136e6a40be1135ab5f42804b14f43615"><param name="Name" value="CinemaBookingSystem::ViewMovies"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html#a08d2e74b62a585f4cf02fdd5116581e5"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html#a08d2e74b62a585f4cf02fdd5116581e5"><param name="Name" value="CinemaBookingSystem::ViewUsers"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>

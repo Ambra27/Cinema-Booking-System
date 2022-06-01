@@ -31,13 +31,13 @@ namespace CinemaBookingSystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cancellation));
             this.label10 = new System.Windows.Forms.Label();
-            this.UserNameTb = new System.Windows.Forms.TextBox();
-            this.TicketIdCb = new System.Windows.Forms.ComboBox();
+            this.textBoxUserName = new System.Windows.Forms.TextBox();
+            this.comboBoxTicketId = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.CancelIdTb = new System.Windows.Forms.TextBox();
+            this.textBoxCancelId = new System.Windows.Forms.TextBox();
             this.buttonExit = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,7 +49,7 @@ namespace CinemaBookingSystem
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.MovieNameTb = new System.Windows.Forms.TextBox();
+            this.textBoxMovieName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,31 +64,31 @@ namespace CinemaBookingSystem
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
             this.label10.Location = new System.Drawing.Point(361, 396);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(221, 28);
+            this.label10.Size = new System.Drawing.Size(213, 27);
             this.label10.TabIndex = 63;
             this.label10.Text = "Cancellations List ";
             // 
-            // UserNameTb
+            // textBoxUserName
             // 
-            this.UserNameTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.UserNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.UserNameTb.Location = new System.Drawing.Point(664, 256);
-            this.UserNameTb.Name = "UserNameTb";
-            this.UserNameTb.Size = new System.Drawing.Size(218, 32);
-            this.UserNameTb.TabIndex = 59;
-            this.UserNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxUserName.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUserName.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxUserName.Location = new System.Drawing.Point(664, 256);
+            this.textBoxUserName.Name = "textBoxUserName";
+            this.textBoxUserName.Size = new System.Drawing.Size(218, 32);
+            this.textBoxUserName.TabIndex = 59;
+            this.textBoxUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TicketIdCb
+            // comboBoxTicketId
             // 
-            this.TicketIdCb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TicketIdCb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.TicketIdCb.FormattingEnabled = true;
-            this.TicketIdCb.Location = new System.Drawing.Point(664, 207);
-            this.TicketIdCb.Name = "TicketIdCb";
-            this.TicketIdCb.Size = new System.Drawing.Size(218, 31);
-            this.TicketIdCb.TabIndex = 58;
-            this.TicketIdCb.SelectionChangeCommitted += new System.EventHandler(this.TicketIdCb_SelectionChangeCommitted);
+            this.comboBoxTicketId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTicketId.ForeColor = System.Drawing.Color.DarkOrange;
+            this.comboBoxTicketId.FormattingEnabled = true;
+            this.comboBoxTicketId.Location = new System.Drawing.Point(664, 207);
+            this.comboBoxTicketId.Name = "comboBoxTicketId";
+            this.comboBoxTicketId.Size = new System.Drawing.Size(218, 31);
+            this.comboBoxTicketId.TabIndex = 58;
+            this.comboBoxTicketId.SelectionChangeCommitted += new System.EventHandler(this.TicketIdCb_SelectionChangeCommitted);
             // 
             // label6
             // 
@@ -98,7 +98,7 @@ namespace CinemaBookingSystem
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(482, 263);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 28);
+            this.label6.Size = new System.Drawing.Size(134, 27);
             this.label6.TabIndex = 55;
             this.label6.Text = "User Name";
             // 
@@ -110,7 +110,7 @@ namespace CinemaBookingSystem
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
             this.label5.Location = new System.Drawing.Point(29, 260);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 28);
+            this.label5.Size = new System.Drawing.Size(157, 27);
             this.label5.TabIndex = 54;
             this.label5.Text = "Movie Name";
             // 
@@ -122,7 +122,7 @@ namespace CinemaBookingSystem
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
             this.label4.Location = new System.Drawing.Point(482, 207);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 28);
+            this.label4.Size = new System.Drawing.Size(105, 27);
             this.label4.TabIndex = 52;
             this.label4.Text = "Ticket Id";
             // 
@@ -134,20 +134,20 @@ namespace CinemaBookingSystem
             this.label3.ForeColor = System.Drawing.Color.DarkOrange;
             this.label3.Location = new System.Drawing.Point(29, 203);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 28);
+            this.label3.Size = new System.Drawing.Size(122, 27);
             this.label3.TabIndex = 51;
             this.label3.Text = "Cancel Id";
             // 
-            // CancelIdTb
+            // textBoxCancelId
             // 
-            this.CancelIdTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.CancelIdTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelIdTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.CancelIdTb.Location = new System.Drawing.Point(217, 203);
-            this.CancelIdTb.Name = "CancelIdTb";
-            this.CancelIdTb.Size = new System.Drawing.Size(218, 32);
-            this.CancelIdTb.TabIndex = 50;
-            this.CancelIdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxCancelId.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxCancelId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCancelId.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxCancelId.Location = new System.Drawing.Point(217, 203);
+            this.textBoxCancelId.Name = "textBoxCancelId";
+            this.textBoxCancelId.Size = new System.Drawing.Size(218, 32);
+            this.textBoxCancelId.TabIndex = 50;
+            this.textBoxCancelId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonExit
             // 
@@ -157,7 +157,7 @@ namespace CinemaBookingSystem
             this.buttonExit.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonExit.Location = new System.Drawing.Point(883, 8);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(28, 28);
+            this.buttonExit.Size = new System.Drawing.Size(28, 27);
             this.buttonExit.TabIndex = 49;
             this.buttonExit.Text = "X";
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
@@ -170,7 +170,7 @@ namespace CinemaBookingSystem
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
             this.label2.Location = new System.Drawing.Point(372, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 28);
+            this.label2.Size = new System.Drawing.Size(194, 27);
             this.label2.TabIndex = 48;
             this.label2.Text = "Cancel booking";
             // 
@@ -224,7 +224,7 @@ namespace CinemaBookingSystem
             this.buttonHelp.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonHelp.Location = new System.Drawing.Point(3, 8);
             this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(65, 28);
+            this.buttonHelp.Size = new System.Drawing.Size(64, 27);
             this.buttonHelp.TabIndex = 72;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
@@ -288,16 +288,16 @@ namespace CinemaBookingSystem
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // MovieNameTb
+            // textBoxMovieName
             // 
-            this.MovieNameTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.MovieNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MovieNameTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.MovieNameTb.Location = new System.Drawing.Point(217, 263);
-            this.MovieNameTb.Name = "MovieNameTb";
-            this.MovieNameTb.Size = new System.Drawing.Size(218, 32);
-            this.MovieNameTb.TabIndex = 71;
-            this.MovieNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMovieName.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxMovieName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMovieName.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxMovieName.Location = new System.Drawing.Point(217, 263);
+            this.textBoxMovieName.Name = "textBoxMovieName";
+            this.textBoxMovieName.Size = new System.Drawing.Size(218, 32);
+            this.textBoxMovieName.TabIndex = 71;
+            this.textBoxMovieName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Cancellation
             // 
@@ -305,7 +305,7 @@ namespace CinemaBookingSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(905, 749);
-            this.Controls.Add(this.MovieNameTb);
+            this.Controls.Add(this.textBoxMovieName);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.buttonCancel);
@@ -313,13 +313,13 @@ namespace CinemaBookingSystem
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.UserNameTb);
-            this.Controls.Add(this.TicketIdCb);
+            this.Controls.Add(this.textBoxUserName);
+            this.Controls.Add(this.comboBoxTicketId);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.CancelIdTb);
+            this.Controls.Add(this.textBoxCancelId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -341,13 +341,13 @@ namespace CinemaBookingSystem
         #endregion
 
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox UserNameTb;
-        private System.Windows.Forms.ComboBox TicketIdCb;
+        private System.Windows.Forms.TextBox textBoxUserName;
+        private System.Windows.Forms.ComboBox comboBoxTicketId;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox CancelIdTb;
+        private System.Windows.Forms.TextBox textBoxCancelId;
         private System.Windows.Forms.Label buttonExit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -358,7 +358,7 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.TextBox MovieNameTb;
+        private System.Windows.Forms.TextBox textBoxMovieName;
         private System.Windows.Forms.Label buttonHelp;
     }
 }

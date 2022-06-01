@@ -76,8 +76,8 @@ namespace CinemaBookingSystem
             DataTable dt = new DataTable();
             dt.Columns.Add("TicketId,typeof(string)");
             dt.Load(reader);
-            TicketIdCb.ValueMember = "TicketId";
-            TicketIdCb.DataSource = dt;
+            comboBoxTicketId.ValueMember = "TicketId";
+            comboBoxTicketId.DataSource = dt;
             Connection.Close();
 
 
@@ -90,14 +90,14 @@ namespace CinemaBookingSystem
             ///aceasta metoda permite umplerea automata a titlurilor de filme din baza de date ce coincid cu id-ul biletului rezervat
             /// <summary>
             Connection.Open();
-            string query = "select * from TicketTbl where TicketId=" + TicketIdCb.SelectedValue.ToString() + ";";
+            string query = "select * from TicketTbl where TicketId=" + comboBoxTicketId.SelectedValue.ToString() + ";";
             SqlCommand cmd = new SqlCommand(query, Connection);
             DataTable dt = new DataTable();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
             dataAdapter.Fill(dt);
             foreach (DataRow dr in dt.Rows)
             {
-                MovieNameTb.Text = dr["MovieName"].ToString();
+                textBoxMovieName.Text = dr["MovieName"].ToString();
 
             }
             Connection.Close();
@@ -127,10 +127,10 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
             /// <summary>
-            CancelIdTb.Text = "";
-            TicketIdCb.Text = "";
-            MovieNameTb.Text = "";
-            UserNameTb.Text = "";
+            textBoxCancelId.Text = "";
+            comboBoxTicketId.Text = "";
+            textBoxMovieName.Text = "";
+            textBoxUserName.Text = "";
             
         }
 
@@ -153,7 +153,7 @@ namespace CinemaBookingSystem
                 ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
                 /// <summary>
                 Connection.Open();
-                string query = "delete from TicketTbl where TicketId=" + TicketIdCb.SelectedValue.ToString() + ";";
+                string query = "delete from TicketTbl where TicketId=" + comboBoxTicketId.SelectedValue.ToString() + ";";
                 SqlCommand cmd = new SqlCommand(query, Connection);
                 cmd.ExecuteNonQuery();
 
@@ -184,7 +184,7 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in prim pas verificam daca avem campuri de informatii goale
             /// <summary>
-            if (CancelIdTb.Text == "" || UserNameTb.Text == "")
+            if (textBoxCancelId.Text == "" || textBoxUserName.Text == "")
             {
                 /// <summary>
                 ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
@@ -204,7 +204,7 @@ namespace CinemaBookingSystem
                     ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
                     /// <summary>
                     Connection.Open();
-                    string query = "insert into CancelTbl values(" + CancelIdTb.Text + ",'" + TicketIdCb.SelectedValue.ToString() + "','" + MovieNameTb.Text + "','" + UserNameTb.Text + "')";
+                    string query = "insert into CancelTbl values(" + textBoxCancelId.Text + ",'" + comboBoxTicketId.SelectedValue.ToString() + "','" + textBoxMovieName.Text + "','" + textBoxUserName.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
 
@@ -257,5 +257,6 @@ namespace CinemaBookingSystem
             Help.ShowHelp(this, "C:/Users/User/Desktop/2022/An3/SemII/IP/Proiect/Rezervare online pentru bilete la cinema/Beta version/CinemaBookingSystem/Help-Rezervare online pentru biletele la cinema.chm");
 
         }
+
     }
 }

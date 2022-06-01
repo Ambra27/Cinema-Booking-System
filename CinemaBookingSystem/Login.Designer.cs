@@ -38,8 +38,8 @@ namespace CinemaBookingSystem
             this.label3 = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
-            this.UIdTb = new System.Windows.Forms.TextBox();
-            this.PasswordTb = new System.Windows.Forms.TextBox();
+            this.textBoxUid = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonExit = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -150,27 +150,27 @@ namespace CinemaBookingSystem
             this.buttonReset.UseVisualStyleBackColor = false;
             this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
-            // UIdTb
+            // textBoxUid
             // 
-            this.UIdTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.UIdTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UIdTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.UIdTb.Location = new System.Drawing.Point(544, 301);
-            this.UIdTb.Name = "UIdTb";
-            this.UIdTb.Size = new System.Drawing.Size(251, 32);
-            this.UIdTb.TabIndex = 7;
-            this.UIdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxUid.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxUid.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUid.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxUid.Location = new System.Drawing.Point(544, 301);
+            this.textBoxUid.Name = "textBoxUid";
+            this.textBoxUid.Size = new System.Drawing.Size(251, 32);
+            this.textBoxUid.TabIndex = 7;
+            this.textBoxUid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // PasswordTb
+            // textBoxPassword
             // 
-            this.PasswordTb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.PasswordTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTb.ForeColor = System.Drawing.Color.DarkOrange;
-            this.PasswordTb.Location = new System.Drawing.Point(544, 403);
-            this.PasswordTb.Name = "PasswordTb";
-            this.PasswordTb.Size = new System.Drawing.Size(251, 32);
-            this.PasswordTb.TabIndex = 8;
-            this.PasswordTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPassword.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.ForeColor = System.Drawing.Color.DarkOrange;
+            this.textBoxPassword.Location = new System.Drawing.Point(544, 403);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(251, 32);
+            this.textBoxPassword.TabIndex = 8;
+            this.textBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonExit
             // 
@@ -225,8 +225,8 @@ namespace CinemaBookingSystem
             this.ClientSize = new System.Drawing.Size(905, 749);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.PasswordTb);
-            this.Controls.Add(this.UIdTb);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxUid);
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label3);
@@ -258,8 +258,8 @@ namespace CinemaBookingSystem
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox UIdTb;
-        private System.Windows.Forms.TextBox PasswordTb;
+        private System.Windows.Forms.TextBox textBoxUid;
+        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label buttonExit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;

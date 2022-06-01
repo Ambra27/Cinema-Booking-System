@@ -100,7 +100,7 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in prim pas verificam daca avem campuri de informatii goale
             /// <summary>
-            if ( IdTb.Text == "")
+            if ( textBoxId.Text == "")
             {
                 /// <summary>
                 ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
@@ -120,7 +120,7 @@ namespace CinemaBookingSystem
                     ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
                     /// <summary>
                     Connection.Open();
-                    string query = "delete from UserTbl where UserId=" + IdTb.Text + ";";
+                    string query = "delete from UserTbl where UserId=" + textBoxId.Text + ";";
                     SqlCommand cmd = new SqlCommand(query,Connection);
                     cmd.ExecuteNonQuery();
 
@@ -161,11 +161,11 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
             /// <summary>
-            IdTb.Text = "";
-            NameTb.Text = "";
-            EmailTb.Text = "";
-            AddressTb.Text = "";
-            PhoneTb.Text = "";
+            textBoxId.Text = "";
+            textBoxName.Text = "";
+            textBoxEmail.Text = "";
+            textBoxAddress.Text = "";
+            textBoxPhone.Text = "";
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -178,7 +178,7 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in prim pas verificam daca avem campuri de informatii goale
             /// <summary>
-            if ( IdTb.Text == "" || NameTb.Text == "" || EmailTb.Text == "" || AddressTb.Text == "" || PhoneTb.Text == "" )
+            if ( textBoxId.Text == "" || textBoxName.Text == "" || textBoxEmail.Text == "" || textBoxAddress.Text == "" || textBoxPhone.Text == "" )
             {
                 /// <summary>
                 ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
@@ -198,7 +198,7 @@ namespace CinemaBookingSystem
                     ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
                     /// <summary>
                     Connection.Open();
-                    string query = "update UserTbl set UserName='"+NameTb.Text+"',UserEmail='"+EmailTb.Text+"',UserAddress='"+AddressTb.Text+"',UserPhone='"+PhoneTb.Text+"' where UserId=" +IdTb.Text+";";
+                    string query = "update UserTbl set UserName='"+textBoxName.Text+"',UserEmail='"+textBoxEmail.Text+"',UserAddress='"+textBoxAddress.Text+"',UserPhone='"+textBoxPhone.Text+"' where UserId=" +textBoxId.Text+";";
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
 

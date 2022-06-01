@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Packages"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Packages"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem"><param name="Local" value="namespace_cinema_booking_system.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties"><param name="Local" value="namespace_cinema_booking_system_1_1_properties.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddMovie"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddMovie"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html#a80901708d6bc7a9a393b5d2069ddc400"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html#add60f98832df3858954210a815ad47ea"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddUser"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddUser"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html#a2f7448c2037e185300352139fa5332f7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html#a04fcd9d55c69b9507076aa666db72b62"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Cancellation"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Cancellation"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html#a89f10bc3c1d533ec8ee4cffda2ba4e4f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html#ada93d5a72cec0203c45dec519005135f"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HomeAdmin"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="HomeAdmin"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html#a851e0f78370d44cd4e85974eae1f8f9f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html#ac9c5adc459c20ce632f0bf64a60d47d9"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Intro"><param name="Local" value="class_cinema_booking_system_1_1_intro.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Intro"><param name="Local" value="class_cinema_booking_system_1_1_intro.html#a5f92d7a4df7ff30102458a91fd04ca4d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_intro.html#aaec55c69b95a32b04018dc6af3882ee3"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Login"><param name="Local" value="class_cinema_booking_system_1_1_login.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Login"><param name="Local" value="class_cinema_booking_system_1_1_login.html#a6dc606efc9eff71c76d4a6a20ebcbf96"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_login.html#ab7cb4e99b03d318aae3e7b0c96df37fd"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Ticket"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Ticket"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html#a06c6d38cedf2409db61ed25c17c0a604"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html#a03645121f0d31e09ec1c0317ea6c177a"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ViewMovies"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ViewMovies"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html#a3bd6e42ecc12d7c880eecfb6be08f42a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html#a136e6a40be1135ab5f42804b14f43615"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ViewUsers"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ViewUsers"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html#a7ce9f23e55c9dc3e4749184241de227a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html#a08d2e74b62a585f4cf02fdd5116581e5"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem"><param name="Local" value="namespace_cinema_booking_system.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddMovie"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddMovie"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html#a80901708d6bc7a9a393b5d2069ddc400"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html#add60f98832df3858954210a815ad47ea"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddUser"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddUser"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html#a2f7448c2037e185300352139fa5332f7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html#a04fcd9d55c69b9507076aa666db72b62"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Cancellation"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Cancellation"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html#a89f10bc3c1d533ec8ee4cffda2ba4e4f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html#ada93d5a72cec0203c45dec519005135f"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HomeAdmin"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="HomeAdmin"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html#a851e0f78370d44cd4e85974eae1f8f9f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html#ac9c5adc459c20ce632f0bf64a60d47d9"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Intro"><param name="Local" value="class_cinema_booking_system_1_1_intro.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Intro"><param name="Local" value="class_cinema_booking_system_1_1_intro.html#a5f92d7a4df7ff30102458a91fd04ca4d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_intro.html#aaec55c69b95a32b04018dc6af3882ee3"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Login"><param name="Local" value="class_cinema_booking_system_1_1_login.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Login"><param name="Local" value="class_cinema_booking_system_1_1_login.html#a6dc606efc9eff71c76d4a6a20ebcbf96"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_login.html#ab7cb4e99b03d318aae3e7b0c96df37fd"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Ticket"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Ticket"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html#a06c6d38cedf2409db61ed25c17c0a604"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html#a03645121f0d31e09ec1c0317ea6c177a"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ViewMovies"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ViewMovies"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html#a3bd6e42ecc12d7c880eecfb6be08f42a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html#a136e6a40be1135ab5f42804b14f43615"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ViewUsers"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ViewUsers"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html#a7ce9f23e55c9dc3e4749184241de227a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html#a08d2e74b62a585f4cf02fdd5116581e5"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Form"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem.AddMovie"><param name="Local" value="class_cinema_booking_system_1_1_add_movie.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem.AddUser"><param name="Local" value="class_cinema_booking_system_1_1_add_user.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem.Cancellation"><param name="Local" value="class_cinema_booking_system_1_1_cancellation.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem.HomeAdmin"><param name="Local" value="class_cinema_booking_system_1_1_home_admin.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem.Intro"><param name="Local" value="class_cinema_booking_system_1_1_intro.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem.Login"><param name="Local" value="class_cinema_booking_system_1_1_login.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem.Ticket"><param name="Local" value="class_cinema_booking_system_1_1_ticket.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem.ViewMovies"><param name="Local" value="class_cinema_booking_system_1_1_view_movies.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CinemaBookingSystem.ViewUsers"><param name="Local" value="class_cinema_booking_system_1_1_view_users.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

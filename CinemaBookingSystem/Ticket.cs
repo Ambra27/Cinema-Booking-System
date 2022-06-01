@@ -74,8 +74,8 @@ namespace CinemaBookingSystem
             DataTable dt = new DataTable();
             dt.Columns.Add("UserId,typeof(int)");
             dt.Load(reader);
-            UserIdCb.ValueMember = "UserId";
-            UserIdCb.DataSource = dt;
+            comboBoxId.ValueMember = "UserId";
+            comboBoxId.DataSource = dt;
             Connection.Close();
 
         }
@@ -92,8 +92,8 @@ namespace CinemaBookingSystem
             DataTable dt = new DataTable();
             dt.Columns.Add("MovieName");
             dt.Load(reader);
-            MovieNameCb.ValueMember = "MovieName";
-            MovieNameCb.DataSource = dt;
+            comboBoxMovieName.ValueMember = "MovieName";
+            comboBoxMovieName.DataSource = dt;
             Connection.Close();
 
 
@@ -127,12 +127,12 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
             /// <summary>
-            TicketIdTb.Text = "";
-            MovieNameCb.Text = "";
-            UserIdCb.Text = "";
-            UserNameTb.Text = "";
-            UserPhoneTb.Text = "";
-            AmontTb.Text = "";
+            textBoxTicket.Text = "";
+            comboBoxMovieName.Text = "";
+            comboBoxId.Text = "";
+            textBoxUserName.Text = "";
+            textBoxUserPhone.Text = "";
+            textBoxAmont.Text = "";
         }
 
 
@@ -146,7 +146,7 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in prim pas verificam daca avem campuri de informatii goale
             /// <summary>
-            if (TicketIdTb.Text == "" || AmontTb.Text == "" )
+            if (textBoxTicket.Text == "" || textBoxAmont.Text == "" )
             {
                 /// <summary>
                 ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
@@ -166,7 +166,7 @@ namespace CinemaBookingSystem
                     ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
                     /// <summary>
                     Connection.Open();
-                    string query = "insert into TicketTbl values(" + TicketIdTb.Text + ",'" + MovieNameCb.SelectedValue.ToString() + "','" + UserIdCb.SelectedValue.ToString() + "','" + UserNameTb.Text + "','" + UserPhoneTb.Text + "','" + AmontTb.Text + "')";
+                    string query = "insert into TicketTbl values(" + textBoxTicket.Text + ",'" + comboBoxMovieName.SelectedValue.ToString() + "','" + comboBoxId.SelectedValue.ToString() + "','" + textBoxUserName.Text + "','" + textBoxUserPhone.Text + "','" + textBoxAmont.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
 
@@ -199,7 +199,7 @@ namespace CinemaBookingSystem
             ///restul campurilor vor fi automat completate cu datele ce au acel UserId
             /// <summary>
             Connection.Open();
-            string query = "select * from UserTbl where UserId=" + UserIdCb.SelectedValue.ToString() + ";";
+            string query = "select * from UserTbl where UserId=" + comboBoxId.SelectedValue.ToString() + ";";
             SqlCommand cmd = new SqlCommand(query, Connection);
             DataTable dt = new DataTable();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
@@ -208,8 +208,8 @@ namespace CinemaBookingSystem
             {
                 UserName = dr["UserName"].ToString();
                 UserPhone = dr["UserPhone"].ToString();
-                UserNameTb.Text = UserName;
-                UserPhoneTb.Text = UserPhone;
+                textBoxUserName.Text = UserName;
+                textBoxUserPhone.Text = UserPhone;
                  
             }
             Connection.Close();

@@ -65,7 +65,7 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in prim pas verificam daca avem campuri de informatii goale
             /// <summary>
-            if ( MovieIdTb.Text == "" || MovieNameTb.Text == "" || GenreCb.SelectedItem.ToString() == "" || TimeOfShowingCb.SelectedItem.ToString() == "" || DateOfShowingPck.Text == "" || SeatsTb.Text == "")
+            if ( textBoxMovieId.Text == "" || textBoxMovieName.Text == "" || comboBoxGenre.SelectedItem.ToString() == "" || comboBoxTimeOS.SelectedItem.ToString() == "" || datepickerDateOS.Text == "" || textBoxSeats.Text == "")
             {
                 /// <summary>
                 ///in cazul in care avem campuri de informatii goale/necompletate va aparea urmatorul mesaj ca avertizare catre utilizator 
@@ -85,7 +85,7 @@ namespace CinemaBookingSystem
                     ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
                     /// <summary>
                     Connection.Open();
-                    string query = "insert into MovieTbl values(" + MovieIdTb.Text + ",'" + MovieNameTb.Text + "','" + GenreCb.SelectedItem.ToString() + "','" + TimeOfShowingCb.SelectedItem.ToString() + "','" + DateOfShowingPck.Value.ToString() + "','" + SeatsTb.Text + "')";
+                    string query = "insert into MovieTbl values(" + textBoxMovieId.Text + ",'" + textBoxMovieName.Text + "','" + comboBoxGenre.SelectedItem.ToString() + "','" + comboBoxTimeOS.SelectedItem.ToString() + "','" + datepickerDateOS.Value.ToString() + "','" + textBoxSeats.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
 
@@ -112,11 +112,11 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in aceasta metoda atunci cand se va apasa pe butonul de reset valorile campurilor vor deveni goale
             /// <summary>
-            MovieIdTb.Text = "";
-            MovieNameTb.Text = "";
-            GenreCb.Text = "";
-            TimeOfShowingCb.Text = "";
-            SeatsTb.Text = "";
+            textBoxMovieId.Text = "";
+            textBoxMovieName.Text = "";
+            comboBoxGenre.Text = "";
+            comboBoxTimeOS.Text = "";
+            textBoxSeats.Text = "";
         }
 
 

@@ -115,7 +115,7 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in prim pas verificam daca avem campuri de informatii goale
             /// <summary>
-            if (MovieIdTb.Text == "")
+            if (textBoxMovieId.Text == "")
             {
                 /// <summary>
                 ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
@@ -135,7 +135,7 @@ namespace CinemaBookingSystem
                     ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
                     /// <summary>
                     Connection.Open();
-                    string query = "delete from MovieTbl where MovieId=" + MovieIdTb.Text + ";";
+                    string query = "delete from MovieTbl where MovieId=" + textBoxMovieId.Text + ";";
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
 
@@ -166,7 +166,7 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in prim pas verificam daca avem campuri de informatii goale
             /// <summary>
-            if (MovieIdTb.Text == "" || MovieNameTb.Text == "" || GenreCb.SelectedItem.ToString() == "" || TimeOfShowingCb.SelectedItem.ToString() == "" || DateOfShowingPck.Text == "" || SeatsTb.Text == "")
+            if (textBoxMovieId.Text == "" || textBoxMovieName.Text == "" || comboBoxGenre.SelectedItem.ToString() == "" || comboBoxTimeOS.SelectedItem.ToString() == "" || datepickerDateOS.Text == "" || textBoxSeats.Text == "")
             {
                 /// <summary>
                 ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
@@ -186,7 +186,7 @@ namespace CinemaBookingSystem
                     ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
                     /// <summary>
                     Connection.Open();
-                    string query = "update MovieTbl set MovieName='" + MovieNameTb.Text + "',Genre='" + GenreCb.Text + "',TimeOfShowing='" + TimeOfShowingCb.SelectedItem.ToString() + "',DateOfShowing='" + DateOfShowingPck.Text + "',Seats='"+ SeatsTb.Text +"' where MovieId=" + MovieIdTb.Text + ";";
+                    string query = "update MovieTbl set MovieName='" + textBoxMovieName.Text + "',Genre='" + comboBoxGenre.Text + "',TimeOfShowing='" + comboBoxTimeOS.SelectedItem.ToString() + "',DateOfShowing='" + datepickerDateOS.Text + "',Seats='"+ textBoxSeats.Text +"' where MovieId=" + textBoxMovieId.Text + ";";
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
 
@@ -213,9 +213,9 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
             /// <summary>
-            MovieIdTb.Text = "";
-            MovieNameTb.Text = "";
-            SeatsTb.Text = "";
+            textBoxMovieId.Text = "";
+            textBoxMovieName.Text = "";
+            textBoxSeats.Text = "";
 
         }
 

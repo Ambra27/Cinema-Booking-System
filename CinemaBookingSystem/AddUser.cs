@@ -64,7 +64,7 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in prim pas verificam daca avem campuri de informatii goale
             /// <summary>
-            if ( UserIdTb.Text == "" || UserNameTb.Text == "" || UserEmailTb.Text == "" || UserAddressTb.Text == "" || UserPhoneTb.Text == ""  )
+            if ( textBoxUserId.Text == "" || textBoxUserName.Text == "" || textBoxEmail.Text == "" || textBoxUserAddress.Text == "" || textBoxUserPhone.Text == ""  )
             {
                 /// <summary>
                 ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
@@ -84,7 +84,7 @@ namespace CinemaBookingSystem
                     ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
                     /// <summary>
                     Connection.Open();
-                    string query = "insert into UserTbl values("+UserIdTb.Text+",'"+UserNameTb.Text+"','"+UserEmailTb.Text+"','"+UserAddressTb.Text+"','"+UserPhoneTb.Text+"')";
+                    string query = "insert into UserTbl values("+textBoxUserId.Text+",'"+textBoxUserName.Text+"','"+textBoxEmail.Text+"','"+textBoxUserAddress.Text+"','"+textBoxUserPhone.Text+"')";
                     SqlCommand cmd = new SqlCommand(query,Connection);
                     cmd.ExecuteNonQuery();
 
@@ -123,11 +123,11 @@ namespace CinemaBookingSystem
             /// <summary>
             ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
             /// <summary>
-            UserIdTb.Text = "";
-            UserNameTb.Text = "";
-            UserEmailTb.Text = "";
-            UserAddressTb.Text = "";
-            UserPhoneTb.Text = "";
+            textBoxUserId.Text = "";
+            textBoxUserName.Text = "";
+            textBoxEmail.Text = "";
+            textBoxUserAddress.Text = "";
+            textBoxUserPhone.Text = "";
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
