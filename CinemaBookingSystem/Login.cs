@@ -41,40 +41,54 @@ namespace CinemaBookingSystem
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata 
-            //iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
+            ///prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata 
+            ///iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
             Application.Exit();
         }
 
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda ni se permite prin apasare butonului Login
-            //sa accesam Home Menu(formul HomeAdmin.cs) cu user-ul si parola de admin
 
+            /// <summary>
+            ///in aceasta metoda ni se permite prin apasare butonului Login
+            ///sa accesam Home Menu(formul HomeAdmin.cs) cu user-ul si parola de admin
+            /// <summary>
 
-            //in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
+            ///in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
             if ( UIdTb.Text == "" || PasswordTb.Text == ""  )
             {
-                //in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
+                ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
                 MessageBox.Show("Enter The User Id and Password");
             }else if(UIdTb.Text == "admin" && PasswordTb.Text == "admin" )
             {
-                //in cazul in care datele introduse in campuri sunt ambele admin se va permite accesul la Home Menu(formul HomeAdmin.cs) 
+                /// <summary>
+                ///in cazul in care datele introduse in campuri sunt ambele admin se va permite accesul la Home Menu(formul HomeAdmin.cs) 
+                /// <summary>
                 HomeAdmin home = new HomeAdmin();
                 home.Show();
                 this.Hide();
             }
             else
             {
-                //in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                /// <summary>
+                ///in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                /// <summary>
                 MessageBox.Show("Wrong User Name or Password!");
             }
         }
 
         private void buttonReset_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
+            /// <summary>
+            ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
+            /// <summary>
             UIdTb.Text = "";
             PasswordTb.Text = "";
 
@@ -82,8 +96,9 @@ namespace CinemaBookingSystem
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            //afisarea extensiei help la apasarea butonului cu acelasi nume
-            //MessageBox.Show("Help");
+            /// <summary>
+            ///afisarea extensiei help la apasarea butonului cu acelasi nume
+            /// <summary>
             Help.ShowHelp(this, "C:/Users/User/Desktop/2022/An3/SemII/IP/Proiect/Rezervare online pentru bilete la cinema/Beta version/CinemaBookingSystem/Help-Rezervare online pentru biletele la cinema.chm");
 
         }

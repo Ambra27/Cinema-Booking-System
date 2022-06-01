@@ -40,13 +40,16 @@ namespace CinemaBookingSystem
             InitializeComponent();
         }
 
-        // realizam o noua conexiune la baza de date sql creata CinemaDb
+        /// <summary>
+        ///realizam o noua conexiune la baza de date sql creata CinemaDb
+        /// <summary>
         SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\CinemaDb.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void Populate()
         {
-            //prin aceasta metoda se popoleaza data grid view-ul cu datele din tabela de interes UserTbl, modificate sau nu
-
+            /// <summary>
+            ///prin aceasta metoda se popoleaza data grid view-ul cu datele din tabela de interes UserTbl, modificate sau nu
+            /// <summary>
             Connection.Open();
             string query = "select * from UserTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query,Connection);
@@ -61,20 +64,26 @@ namespace CinemaBookingSystem
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata
-            //iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
+            ///prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata
+            ///iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
             Application.Exit();
         }
 
         private void ViewUsers_Load(object sender, EventArgs e)
         {
-            //la accesarea formului ViewUsers se va incarca in datagridview un tabel ce va fi populat cu date din tabela UserTbl
+            /// <summary>
+            ///la accesarea formului ViewUsers se va incarca in datagridview un tabel ce va fi populat cu date din tabela UserTbl
+            /// <summary>
             Populate();
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda ni se permite prin apasarea butonului Back sa avem acces la Home Menu(formul HomeAdmin.cs)
+            /// <summary>
+            ///in aceasta metoda ni se permite prin apasarea butonului Back sa avem acces la Home Menu(formul HomeAdmin.cs)
+            /// <summary>
             HomeAdmin home = new HomeAdmin();
             home.Show();
             this.Hide();
@@ -83,37 +92,50 @@ namespace CinemaBookingSystem
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
+            /// <summary>
+            ///in aceasta metoda ni se permite prin apasarea butonului delete sa stergem informatiile unui 
+            ///user din tabel introducand id-ul userului in campul id
+            /// <summary>
 
-            //in aceasta metoda ni se permite prin apasarea butonului delete sa stergem informatiile unui 
-            //user din tabel introducand id-ul userului in campul id
-
-            //in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
+            ///in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
             if ( IdTb.Text == "")
             {
-                //in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
+                ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
                 MessageBox.Show("Enter The User to Delete");
             }
             else
             {
-                //error handling
+                /// <summary>
+                ///error handling
+                /// <summary>
                 try
                 {
-                    //daca am completat corect informatiile in campurile interfetei se va crea o connexiune la baza de date
-                    //ce ne va permite sa inseram in tabela MovieTbl date noi prin comanda ce o vom stoca in variabila cmd
-                    //ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                    /// <summary>
+                    ///daca am completat corect informatiile in campurile interfetei se va crea o connexiune la baza de date
+                    ///ce ne va permite sa inseram in tabela MovieTbl date noi prin comanda ce o vom stoca in variabila cmd
+                    ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                    /// <summary>
                     Connection.Open();
                     string query = "delete from UserTbl where UserId=" + IdTb.Text + ";";
                     SqlCommand cmd = new SqlCommand(query,Connection);
                     cmd.ExecuteNonQuery();
 
-                    //dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
-                    //ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                    /// <summary>
+                    ///dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
+                    ///ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                    /// <summary>
                     MessageBox.Show("User Deleted Successfully");
                     Connection.Close();
                     Populate();
                 }catch(Exception Ex)
                 {
-                    //in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                    /// <summary>
+                    ///in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                    /// <summary>
                     MessageBox.Show(Ex.Message);
                 }
             }
@@ -136,7 +158,9 @@ namespace CinemaBookingSystem
 
         private void buttonReset_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
+            /// <summary>
+            ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
+            /// <summary>
             IdTb.Text = "";
             NameTb.Text = "";
             EmailTb.Text = "";
@@ -146,46 +170,60 @@ namespace CinemaBookingSystem
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda ni se permite cand apasam butonul de update sa modificam datele
-            //unui user existent dintabel UserTbl
+            /// <summary>
+            ///in aceasta metoda ni se permite cand apasam butonul de update sa modificam datele
+            ///unui user existent dintabel UserTbl
+            /// <summary>
 
-            //in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
+            ///in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
             if ( IdTb.Text == "" || NameTb.Text == "" || EmailTb.Text == "" || AddressTb.Text == "" || PhoneTb.Text == "" )
             {
-                //in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
+                ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
                 MessageBox.Show("Missing Information");
             }
             else
             {
-                //error handling
+                /// <summary>
+                ///error handling
+                /// <summary>
                 try
                 {
-                    //daca am completat corect informatiile in campurile interfetei se va crea o connexiune la baza de date
-                    //ce ne va permite sa inseram in tabela MovieTbl date noi prin comanda ce o vom stoca in variabila cmd
-                    //ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                    /// <summary>
+                    ///daca am completat corect informatiile in campurile interfetei se va crea o connexiune la baza de date
+                    ///ce ne va permite sa inseram in tabela MovieTbl date noi prin comanda ce o vom stoca in variabila cmd
+                    ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                    /// <summary>
                     Connection.Open();
                     string query = "update UserTbl set UserName='"+NameTb.Text+"',UserEmail='"+EmailTb.Text+"',UserAddress='"+AddressTb.Text+"',UserPhone='"+PhoneTb.Text+"' where UserId=" +IdTb.Text+";";
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
 
-                    //dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
-                    //ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                    /// <summary>
+                    ///dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
+                    ///ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                    /// <summary>
                     MessageBox.Show("User Updated Successfully");
                     Connection.Close();
                     Populate();
                 }catch(Exception Ex)
                 {
-                    //in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                    /// <summary>
+                    ///in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                    /// <summary>
                     MessageBox.Show(Ex.Message);
-                    //MessageBox.Show("Missing Information");
                 }
             }
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            //afisarea extensiei help la apasarea butonului cu acelasi nume
-            //MessageBox.Show("Help");
+            /// <summary>
+            ///afisarea extensiei help la apasarea butonului cu acelasi nume
+            /// <summary>
             Help.ShowHelp(this, "C:/Users/User/Desktop/2022/An3/SemII/IP/Proiect/Rezervare online pentru bilete la cinema/Beta version/CinemaBookingSystem/Help-Rezervare online pentru biletele la cinema.chm");
 
         }

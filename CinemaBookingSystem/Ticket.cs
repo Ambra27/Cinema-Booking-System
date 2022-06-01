@@ -40,15 +40,18 @@ namespace CinemaBookingSystem
             InitializeComponent();
         }
 
-        // realizam o noua conexiune la baza de date sql creata CinemaDb
+        /// <summary>
+        /// realizam o noua conexiune la baza de date sql creata CinemaDb
+        /// <summary>
         SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\CinemaDb.mdf;Integrated Security=True;Connect Timeout=30");
 
 
 
         private void Populate()
         {
-            //prin aceasta metoda se popoleaza data grid view-ul cu datele din tabela de interes TicketTbl,modificate sau nu
-
+            /// <summary>
+            ///prin aceasta metoda se popoleaza data grid view-ul cu datele din tabela de interes TicketTbl,modificate sau nu
+            /// <summary>
             Connection.Open();
             string query = "select * from TicketTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, Connection);
@@ -61,7 +64,9 @@ namespace CinemaBookingSystem
 
         private void fillUserId()
         {
-            //aceasta metoda permite umplerea automata a id-urilor user-ilor din baza de date
+            /// <summary>
+            ///aceasta metoda permite umplerea automata a id-urilor user-ilor din baza de date
+            /// <summary>
             Connection.Open();
             SqlCommand cmd = new SqlCommand("select UserId from UserTbl",Connection);
             SqlDataReader reader;
@@ -77,8 +82,9 @@ namespace CinemaBookingSystem
 
         private void fillMovieName()
         {
-            //aceasta metoda permite umplerea automata a titlurilor de filme din baza de date
-            
+            /// <summary>
+            ///aceasta metoda permite umplerea automata a titlurilor de filme din baza de date
+            /// <summary>
             Connection.Open();
             SqlCommand cmd = new SqlCommand("select MovieName from MovieTbl", Connection);
             SqlDataReader reader;
@@ -95,19 +101,22 @@ namespace CinemaBookingSystem
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata 
-            //iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
+            ///prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata 
+            ///iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
             Application.Exit();
 
         }
 
         private void Ticket_Load(object sender, EventArgs e)
         {
-            //la accesarea formului Ticket functia fillUserId va umple optiunile din combobox-ul 
-            //al campului UserId cu id-urile userilor existenti in baza de date
-            //(in mod asemanator se intampla si cu apelul functiei fillMovieName)
-            //iar apoi se va popula un tabel cu datele din tabela CanceTbl in datagridview-ul interfetei Ticket.cs
-
+            /// <summary>
+            ///la accesarea formului Ticket functia fillUserId va umple optiunile din combobox-ul 
+            ///al campului UserId cu id-urile userilor existenti in baza de date
+            ///(in mod asemanator se intampla si cu apelul functiei fillMovieName)
+            ///iar apoi se va popula un tabel cu datele din tabela CanceTbl in datagridview-ul interfetei Ticket.cs
+            /// <summary>
             fillUserId();
             fillMovieName();
             Populate();
@@ -115,7 +124,9 @@ namespace CinemaBookingSystem
 
         private void buttonReset_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
+            /// <summary>
+            ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
+            /// <summary>
             TicketIdTb.Text = "";
             MovieNameCb.Text = "";
             UserIdCb.Text = "";
@@ -127,36 +138,51 @@ namespace CinemaBookingSystem
 
         private void buttonBook_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda atunci cand se va apasa butonul de Book se va adauga o rezervare in tabela TicketTbl 
 
-            //in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
+            ///in aceasta metoda atunci cand se va apasa butonul de Book se va adauga o rezervare in tabela TicketTbl 
+            /// <summary>
+
+            /// <summary>
+            ///in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
             if (TicketIdTb.Text == "" || AmontTb.Text == "" )
             {
-                //in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
+                ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
                 MessageBox.Show("Missing information!Please complete the fields in order to book the tickets.");
             }
             else
             {
-                //error handling
+                /// <summary>
+                ///error handling
+                /// <summary>
                 try
                 {
-                    //daca am completat informatiile in campurile interfetei se va crea o connexiune la baza de date
-                    //ce ne va permite sa inseram in tabela TicketTbl date noi prin comanda ce o vom stoca in variabila cmd
-                    //ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                    /// <summary>
+                    ///daca am completat informatiile in campurile interfetei se va crea o connexiune la baza de date
+                    ///ce ne va permite sa inseram in tabela TicketTbl date noi prin comanda ce o vom stoca in variabila cmd
+                    ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                    /// <summary>
                     Connection.Open();
                     string query = "insert into TicketTbl values(" + TicketIdTb.Text + ",'" + MovieNameCb.SelectedValue.ToString() + "','" + UserIdCb.SelectedValue.ToString() + "','" + UserNameTb.Text + "','" + UserPhoneTb.Text + "','" + AmontTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
 
-                    //dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
-                    //ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                    /// <summary>
+                    ///dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
+                    ///ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                    /// <summary>
                     MessageBox.Show("Ticket Booked Successfully");
                     Connection.Close();
                     Populate();
                 }
                 catch (Exception Ex)
                 {
-                    //in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                    /// <summary>
+                    ///in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                    /// <summary>
                     MessageBox.Show(Ex.Message);
                 }
             }
@@ -168,8 +194,10 @@ namespace CinemaBookingSystem
         string UserName, UserPhone;
         private void fecthUserInfo()
         {
-            //prin aceasta metoda atunci cand se va completa campul UserId cu un anumi id
-            //restul campurilor vor fi automat completate cu datele ce au acel UserId
+            /// <summary>
+            ///prin aceasta metoda atunci cand se va completa campul UserId cu un anumi id
+            ///restul campurilor vor fi automat completate cu datele ce au acel UserId
+            /// <summary>
             Connection.Open();
             string query = "select * from UserTbl where UserId=" + UserIdCb.SelectedValue.ToString() + ";";
             SqlCommand cmd = new SqlCommand(query, Connection);
@@ -189,7 +217,9 @@ namespace CinemaBookingSystem
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda ni se permite prin apasarea butonului Back sa revenim in Home Menu ( formul HomeAdmin )
+            /// <summary>
+            ///in aceasta metoda ni se permite prin apasarea butonului Back sa revenim in Home Menu ( formul HomeAdmin )
+            /// <summary>
             HomeAdmin home = new HomeAdmin();
             home.Show();
             this.Hide();
@@ -197,15 +227,18 @@ namespace CinemaBookingSystem
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            //afisarea extensiei help la apasarea butonului cu acelasi nume
-            //MessageBox.Show("Help");
+            /// <summary>
+            ///afisarea extensiei help la apasarea butonului cu acelasi nume
+            /// <summary>
             Help.ShowHelp(this, "C:/Users/User/Desktop/2022/An3/SemII/IP/Proiect/Rezervare online pentru bilete la cinema/Beta version/CinemaBookingSystem/Help-Rezervare online pentru biletele la cinema.chm");
 
         }
 
         private void UserIdCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            //la accesarea formului si completarea UserId-ului functia fecthUserInfo va aduce completari in restul campurilor
+            /// <summary>
+            ///la accesarea formului si completarea UserId-ului functia fecthUserInfo va aduce completari in restul campurilor
+            /// <summary>
             fecthUserInfo();
         }
     }

@@ -41,14 +41,17 @@ namespace CinemaBookingSystem
             InitializeComponent();
         }
 
-        // realizam o noua conexiune la baza de date sql creata CinemaDb
+        /// <summary>
+        /// realizam o noua conexiune la baza de date sql creata CinemaDb
+        /// <summary>
         SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\CinemaDb.mdf;Integrated Security=True;Connect Timeout=30");
 
 
         private void Populate()
         {
-            //prin aceasta metoda se popoleaza data grid view-ul cu datele din tabela de interes CancelTbl, modificate sau nu
-
+            /// <summary>
+            ///prin aceasta metoda se popoleaza data grid view-ul cu datele din tabela de interes CancelTbl, modificate sau nu
+            /// <summary>
             Connection.Open();
             string query = "select * from CancelTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, Connection);
@@ -63,8 +66,9 @@ namespace CinemaBookingSystem
 
         private void fillTicketId()
         {
-            //aceasta metoda permite umplerea automata a id-urilor biletelor din baza de date
-
+            /// <summary>
+            ///aceasta metoda permite umplerea automata a id-urilor biletelor din baza de date
+            /// <summary>
             Connection.Open();
             SqlCommand cmd = new SqlCommand("select TicketId from TicketTbl", Connection);
             SqlDataReader reader;
@@ -82,8 +86,9 @@ namespace CinemaBookingSystem
        
         private void fecthMovieName()
         {
-            //aceasta metoda permite umplerea automata a titlurilor de filme din baza de date ce coincid cu id-ul biletului rezervat
-
+            /// <summary>
+            ///aceasta metoda permite umplerea automata a titlurilor de filme din baza de date ce coincid cu id-ul biletului rezervat
+            /// <summary>
             Connection.Open();
             string query = "select * from TicketTbl where TicketId=" + TicketIdCb.SelectedValue.ToString() + ";";
             SqlCommand cmd = new SqlCommand(query, Connection);
@@ -100,22 +105,28 @@ namespace CinemaBookingSystem
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata 
-            //iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
+            ///prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata 
+            ///iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
             Application.Exit();
         }
 
         private void TicketIdCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            //atunci cand are loc o schimbare/modificare a informatiei din campul id-ului biletului
-            //se va apela functia fetchMovieName ce va returna titlul filmului care corespunde id-ului ticketului
+            /// <summary>
+            ///atunci cand are loc o schimbare/modificare a informatiei din campul id-ului biletului
+            ///se va apela functia fetchMovieName ce va returna titlul filmului care corespunde id-ului ticketului
+            /// <summary>
             fecthMovieName();
         }
 
 
         private void buttonReset_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
+            /// <summary>
+            ///in aceasta metoda atunci cand se va apasa butonul de reset valorile campurilor vor deveni goale
+            /// <summary>
             CancelIdTb.Text = "";
             TicketIdCb.Text = "";
             MovieNameTb.Text = "";
@@ -125,61 +136,82 @@ namespace CinemaBookingSystem
 
         private void deleteTicket()
         {
-            //cu aceasta metoda vom putea anula rezervarea de bilete 
-            //o data ce rezervarea este anulata , datele rezervarii biletului vor fi sterse din tabela TicketTbl 
-            //si inserate in tabela CancelTbl din baza de date
+            /// <summary>
+            ///cu aceasta metoda vom putea anula rezervarea de bilete 
+            ///o data ce rezervarea este anulata , datele rezervarii biletului vor fi sterse din tabela TicketTbl 
+            ///si inserate in tabela CancelTbl din baza de date
+            /// <summary>
 
-            //error handling
+            /// <summary>
+            ///error handling
+            /// <summary>
             try
             {
-                //la apelul acestei functii se va incerca a se crea o connexiune la baza de date
-                //ce ne va permite sa inseram in tabela CancelTbl date noi prin comanda ce o vom stoca in variabila cmd
-                //ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                /// <summary>
+                ///la apelul acestei functii se va incerca a se crea o connexiune la baza de date
+                ///ce ne va permite sa inseram in tabela CancelTbl date noi prin comanda ce o vom stoca in variabila cmd
+                ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                /// <summary>
                 Connection.Open();
                 string query = "delete from TicketTbl where TicketId=" + TicketIdCb.SelectedValue.ToString() + ";";
                 SqlCommand cmd = new SqlCommand(query, Connection);
                 cmd.ExecuteNonQuery();
 
-                //dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
-                //ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                /// <summary>
+                ///dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
+                ///ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                /// <summary>
                 MessageBox.Show("Booking Deleted Successfully");
                 Connection.Close();
                 Populate();
             }
             catch (Exception Ex)
             {
-                //in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                /// <summary>
+                ///in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                /// <summary>
                 MessageBox.Show(Ex.Message);
             }
 
         }
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda atunci cand se va apasa butonul de cancel
-            //se va adauga o anularea in tabela CancelTbl a unei rezervari de bilete 
+            /// <summary>
+            ///in aceasta metoda atunci cand se va apasa butonul de cancel
+            ///se va adauga o anularea in tabela CancelTbl a unei rezervari de bilete 
+            /// <summary>
 
-            //in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
+            ///in prim pas verificam daca avem campuri de informatii goale
+            /// <summary>
             if (CancelIdTb.Text == "" || UserNameTb.Text == "")
             {
-                //in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
+                ///in cazul in care avem campuri de informatii goale/necompletat va aparea urmatorul mesaj ca avertizare catre utilizator
+                /// <summary>
                 MessageBox.Show("Missing information!Please complete the fields in order to cancel the booking.");
             }
             else
             {
-                //error handling
+                /// <summary>
+                ///error handling
+                /// <summary>
                 try
                 {
-                    //daca am completat informatiile corect in campurile interfetei se va crea o connexiune la baza de date
-                    //ce ne va permite sa inseram in tabela CancelTbl date noi prin comanda ce o vom stoca in variabila cmd
-                    //ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                    /// <summary>
+                    ///daca am completat informatiile corect in campurile interfetei se va crea o connexiune la baza de date
+                    ///ce ne va permite sa inseram in tabela CancelTbl date noi prin comanda ce o vom stoca in variabila cmd
+                    ///ca mai apoi sa fie executata prin apelul functiei ExecuteNonQuery
+                    /// <summary>
                     Connection.Open();
                     string query = "insert into CancelTbl values(" + CancelIdTb.Text + ",'" + TicketIdCb.SelectedValue.ToString() + "','" + MovieNameTb.Text + "','" + UserNameTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, Connection);
                     cmd.ExecuteNonQuery();
 
-
-                    //dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
-                    //ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                    /// <summary>
+                    ///dupa inserarea noilor date in tabel urmatorul mesaj va aparea intr-un MessageBox
+                    ///ca mai apoi conexiunea cu baze de date sa fie inchisa prin apelarea functiei Close
+                    /// <summary>
                     MessageBox.Show("Booking Cancelled Successfully");
                     Connection.Close();
                     Populate();
@@ -187,7 +219,9 @@ namespace CinemaBookingSystem
                 }
                 catch (Exception Ex)
                 {
-                    //in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                    /// <summary>
+                    ///in cazul in care va afea loc o exceptie va aparea un mesaj de eroare generat de Ex.Message ce explica motivul acesteia
+                    /// <summary>
                     MessageBox.Show(Ex.Message);
                 }
             }
@@ -196,16 +230,20 @@ namespace CinemaBookingSystem
 
         private void Cancellation_Load(object sender, EventArgs e)
         {
-            //la accesarea formului Cancellation functia fillTicketId va umple optiunile din combobox-ul 
-            //al campului TicketId cu id-urile biletelor existente in baza de date iar apoi se va popula un tabel 
-            //cu datele din tabela CanceTbl in datagridview-ul interfetei Cancellation.cs
+            /// <summary>
+            ///la accesarea formului Cancellation functia fillTicketId va umple optiunile din combobox-ul 
+            ///al campului TicketId cu id-urile biletelor existente in baza de date iar apoi se va popula un tabel 
+            ///cu datele din tabela CanceTbl in datagridview-ul interfetei Cancellation.cs
+            /// <summary>
             fillTicketId();
             Populate();
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            //in aceasta metoda ni se permite prin apasarea butonului Back sa revenim in Home Menu ( formul HomeAdmin )
+            /// <summary>
+            ///in aceasta metoda ni se permite prin apasarea butonului Back sa revenim in Home Menu ( formul HomeAdmin )
+            /// <summary>
             HomeAdmin home = new HomeAdmin();
             home.Show();
             this.Hide();
@@ -213,8 +251,9 @@ namespace CinemaBookingSystem
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            //afisarea extensiei help la apasarea butonului cu acelasi nume
-            //MessageBox.Show("Help");
+            /// <summary>
+            ///afisarea extensiei help la apasarea butonului cu acelasi nume
+            /// <summary>
             Help.ShowHelp(this, "C:/Users/User/Desktop/2022/An3/SemII/IP/Proiect/Rezervare online pentru bilete la cinema/Beta version/CinemaBookingSystem/Help-Rezervare online pentru biletele la cinema.chm");
 
         }

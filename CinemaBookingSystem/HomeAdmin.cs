@@ -40,16 +40,19 @@ namespace CinemaBookingSystem
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata
-            //iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
+            ///prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata
+            ///iesi din program prin efectuarea unui click asupra acestuia
+            /// <summary>
             Application.Exit();
         }
 
         private void buttonAddMovies_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca butonul Add Movies a interfetei sa poata
-            //accesa formul AddMovie prin efectuarea unui click asupra acestuia
-
+            /// <summary>
+            ///prin aceasta metoda implementam ca butonul Add Movies a interfetei sa poata
+            ///accesa formul AddMovie prin efectuarea unui click asupra acestuia
+            /// <summary>
             AddMovie movie = new AddMovie();
             movie.Show();
             this.Hide();
@@ -57,9 +60,10 @@ namespace CinemaBookingSystem
 
         private void buttonAddUsers_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca butonul Add Users a interfetei sa poata
-            //accesa formul AddUser prin efectuarea unui click asupra acestuia
-
+            /// <summary>
+            ///prin aceasta metoda implementam ca butonul Add Users a interfetei sa poata
+            ///accesa formul AddUser prin efectuarea unui click asupra acestuia
+            /// <summary>
             AddUser user = new AddUser();
             user.Show();
             this.Hide();
@@ -67,9 +71,10 @@ namespace CinemaBookingSystem
 
         private void buttonTickets_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca butonul Tickets a interfetei sa poata
-            //accesa formul Tiket prin efectuarea unui click asupra acestuia
-
+            /// <summary>
+            ///prin aceasta metoda implementam ca butonul Tickets a interfetei sa poata
+            ///accesa formul Tiket prin efectuarea unui click asupra acestuia
+            /// <summary>
             Ticket ticket = new Ticket();
             ticket.Show();
             this.Hide();
@@ -77,9 +82,10 @@ namespace CinemaBookingSystem
 
         private void buttonCancellation_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca butonul Cancellation a interfetei sa poata
-            //accesa formul Cancellation prin efectuarea unui click asupra acestuia
-
+            /// <summary>
+            ///prin aceasta metoda implementam ca butonul Cancellation a interfetei sa poata
+            ///accesa formul Cancellation prin efectuarea unui click asupra acestuia
+            /// <summary>
             Cancellation cancel = new Cancellation();
             cancel.Show();
             this.Hide();
@@ -87,9 +93,10 @@ namespace CinemaBookingSystem
 
         private void buttonViewMovies_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca butonul View Movies a interfetei sa poata
-            //accesa formul ViewMovies prin efectuarea unui click asupra acestuia
-
+            /// <summary>
+            ///prin aceasta metoda implementam ca butonul View Movies a interfetei sa poata
+            ///accesa formul ViewMovies prin efectuarea unui click asupra acestuia
+            /// <summary>
             ViewMovies vm = new ViewMovies();
             vm.Show();
             this.Hide();
@@ -98,9 +105,10 @@ namespace CinemaBookingSystem
 
         private void buttonViewUsers_Click(object sender, EventArgs e)
         {
-            //prin aceasta metoda implementam ca butonul View Users a interfetei sa poata
-            //accesa formul ViewUsers prin efectuarea unui click asupra acestuia
-
+            /// <summary>
+            ///prin aceasta metoda implementam ca butonul View Users a interfetei sa poata
+            ///accesa formul ViewUsers prin efectuarea unui click asupra acestuia
+            /// <summary>
             ViewUsers vu = new ViewUsers();
             vu.Show();
             this.Hide();
@@ -108,8 +116,9 @@ namespace CinemaBookingSystem
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            //afisarea extensiei help la apasarea butonului cu acelasi nume
-            //MessageBox.Show("Help");
+            /// <summary>
+            ///afisarea extensiei help la apasarea butonului cu acelasi nume
+            /// <summary>
             Help.ShowHelp(this, "C:/Users/User/Desktop/2022/An3/SemII/IP/Proiect/Rezervare online pentru bilete la cinema/Beta version/CinemaBookingSystem/Help-Rezervare online pentru biletele la cinema.chm");
 
 

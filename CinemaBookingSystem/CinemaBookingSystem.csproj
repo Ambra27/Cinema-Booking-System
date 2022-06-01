@@ -57,6 +57,7 @@
     <Compile Include="Cancellation.Designer.cs">
       <DependentUpon>Cancellation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="HomeAdmin.cs">
       <SubType>Form</SubType>
     </Compile>

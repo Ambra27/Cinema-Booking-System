@@ -64,10 +64,9 @@ namespace CinemaBookingSystem
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
             this.label10.Location = new System.Drawing.Point(361, 396);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(213, 27);
+            this.label10.Size = new System.Drawing.Size(221, 28);
             this.label10.TabIndex = 63;
             this.label10.Text = "Cancellations List ";
-            
             // 
             // UserNameTb
             // 
@@ -99,7 +98,7 @@ namespace CinemaBookingSystem
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(482, 263);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 27);
+            this.label6.Size = new System.Drawing.Size(140, 28);
             this.label6.TabIndex = 55;
             this.label6.Text = "User Name";
             // 
@@ -111,7 +110,7 @@ namespace CinemaBookingSystem
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
             this.label5.Location = new System.Drawing.Point(29, 260);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 27);
+            this.label5.Size = new System.Drawing.Size(162, 28);
             this.label5.TabIndex = 54;
             this.label5.Text = "Movie Name";
             // 
@@ -123,7 +122,7 @@ namespace CinemaBookingSystem
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
             this.label4.Location = new System.Drawing.Point(482, 207);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 27);
+            this.label4.Size = new System.Drawing.Size(109, 28);
             this.label4.TabIndex = 52;
             this.label4.Text = "Ticket Id";
             // 
@@ -135,7 +134,7 @@ namespace CinemaBookingSystem
             this.label3.ForeColor = System.Drawing.Color.DarkOrange;
             this.label3.Location = new System.Drawing.Point(29, 203);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 27);
+            this.label3.Size = new System.Drawing.Size(127, 28);
             this.label3.TabIndex = 51;
             this.label3.Text = "Cancel Id";
             // 
@@ -156,9 +155,9 @@ namespace CinemaBookingSystem
             this.buttonExit.BackColor = System.Drawing.Color.Maroon;
             this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.DarkOrange;
-            this.buttonExit.Location = new System.Drawing.Point(880, 2);
+            this.buttonExit.Location = new System.Drawing.Point(883, 8);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(28, 27);
+            this.buttonExit.Size = new System.Drawing.Size(28, 28);
             this.buttonExit.TabIndex = 49;
             this.buttonExit.Text = "X";
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
@@ -171,7 +170,7 @@ namespace CinemaBookingSystem
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
             this.label2.Location = new System.Drawing.Point(372, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 27);
+            this.label2.Size = new System.Drawing.Size(200, 28);
             this.label2.TabIndex = 48;
             this.label2.Text = "Cancel booking";
             // 
@@ -211,9 +210,10 @@ namespace CinemaBookingSystem
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
             this.panel1.Controls.Add(this.buttonHelp);
+            this.panel1.Controls.Add(this.buttonExit);
             this.panel1.Location = new System.Drawing.Point(-3, -6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(911, 36);
+            this.panel1.Size = new System.Drawing.Size(911, 39);
             this.panel1.TabIndex = 66;
             // 
             // buttonHelp
@@ -224,7 +224,7 @@ namespace CinemaBookingSystem
             this.buttonHelp.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonHelp.Location = new System.Drawing.Point(3, 8);
             this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(64, 27);
+            this.buttonHelp.Size = new System.Drawing.Size(65, 28);
             this.buttonHelp.TabIndex = 72;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
@@ -242,7 +242,6 @@ namespace CinemaBookingSystem
             this.CancelDGV.RowTemplate.Height = 25;
             this.CancelDGV.Size = new System.Drawing.Size(862, 295);
             this.CancelDGV.TabIndex = 67;
-            
             // 
             // buttonBack
             // 
@@ -321,7 +320,6 @@ namespace CinemaBookingSystem
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.CancelIdTb);
-            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
