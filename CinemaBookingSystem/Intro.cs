@@ -40,12 +40,20 @@ namespace CinemaBookingSystem
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
+            //prin aceasta metoda implementam ca X-ul din dreapta de sus a interfetei sa poata 
+            //iesi din program prin efectuarea unui click asupra acestuia
             Application.Exit();
         }
+
 
         int startpoint = 0;
         private void timerProgress_Tick(object sender, EventArgs e)
         {
+            //prin aceasta metoda dorim sa programam ProgressBar-ul din interfata
+            //bara verde se va incarca treptat de la stanga la dreapta 
+            //pana ce valoarea startpoint preluata de Myprogress 
+            //va ajunge la valoarea 100
+            //din rulari repetate am observat timpul scurs pentru a se executa aceasta functie este undeva la ~10 secunde
             startpoint += 1;
             Myprogress.Value = startpoint;
             if(Myprogress.Value == 100)
@@ -61,6 +69,7 @@ namespace CinemaBookingSystem
 
         private void Intro_Load(object sender, EventArgs e)
         {
+            //cand se acceseaza formul Intro este apelata functia timeProgress
             timerProgress.Start();
         }
     }

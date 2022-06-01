@@ -57,11 +57,11 @@
     <Compile Include="Cancellation.Designer.cs">
       <DependentUpon>Cancellation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="HomeAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="HomeAdmin.Designer.cs">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Intro.cs">
       <SubType>Form</SubType>
@@ -107,8 +107,8 @@
     <EmbeddedResource Include="Cancellation.resx">
       <DependentUpon>Cancellation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="HomeAdmin.resx">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Intro.resx">
       <DependentUpon>Intro.cs</DependentUpon>

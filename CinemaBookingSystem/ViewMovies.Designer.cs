@@ -282,7 +282,7 @@ namespace CinemaBookingSystem
             this.buttonExit.Size = new System.Drawing.Size(28, 27);
             this.buttonExit.TabIndex = 36;
             this.buttonExit.Text = "X";
-            this.buttonExit.Click += new System.EventHandler(this.label8_Click);
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // pictureBox1
             // 

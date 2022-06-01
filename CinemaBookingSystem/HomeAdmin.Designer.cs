@@ -1,7 +1,7 @@
 ﻿
 namespace CinemaBookingSystem
 {
-    partial class Home
+    partial class HomeAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace CinemaBookingSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeAdmin));
             this.label1 = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,7 +52,7 @@ namespace CinemaBookingSystem
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(299, 50);
+            this.label1.Location = new System.Drawing.Point(315, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(344, 34);
             this.label1.TabIndex = 6;
@@ -105,7 +105,7 @@ namespace CinemaBookingSystem
             this.buttonAddMovies.TabIndex = 42;
             this.buttonAddMovies.Text = "Add Movies";
             this.buttonAddMovies.UseVisualStyleBackColor = false;
-            this.buttonAddMovies.Click += new System.EventHandler(this.buttonMovies_Click);
+            this.buttonAddMovies.Click += new System.EventHandler(this.buttonAddMovies_Click);
             // 
             // buttonAddUsers
             // 
@@ -119,7 +119,7 @@ namespace CinemaBookingSystem
             this.buttonAddUsers.TabIndex = 43;
             this.buttonAddUsers.Text = "Add Users";
             this.buttonAddUsers.UseVisualStyleBackColor = false;
-            this.buttonAddUsers.Click += new System.EventHandler(this.buttonUsers_Click);
+            this.buttonAddUsers.Click += new System.EventHandler(this.buttonAddUsers_Click);
             // 
             // buttonTickets
             // 
@@ -155,7 +155,7 @@ namespace CinemaBookingSystem
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(400, 107);
+            this.label2.Location = new System.Drawing.Point(417, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 23);
             this.label2.TabIndex = 46;
@@ -199,7 +199,7 @@ namespace CinemaBookingSystem
             this.buttonViewUsers.UseVisualStyleBackColor = false;
             this.buttonViewUsers.Click += new System.EventHandler(this.buttonViewUsers_Click);
             // 
-            // Home
+            // HomeAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -220,7 +220,7 @@ namespace CinemaBookingSystem
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Home";
+            this.Name = "HomeAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.panel1.ResumeLayout(false);
