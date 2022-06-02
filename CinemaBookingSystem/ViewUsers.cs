@@ -48,7 +48,7 @@ namespace CinemaBookingSystem
         private void Populate()
         {
             /// <summary>
-            ///prin aceasta metoda se popoleaza data grid view-ul cu datele din tabela de interes UserTbl, modificate sau nu
+            ///prin aceasta metoda se populeaza data grid view-ul cu datele din tabela de interes UserTbl, modificate sau nu
             /// <summary>
             Connection.Open();
             string query = "select * from UserTbl";
